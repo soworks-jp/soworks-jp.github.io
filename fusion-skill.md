@@ -31,11 +31,9 @@ It is a local, prompt-based skill. It does not require an API key or a SaaS acco
 
 ![Fusion Skill view preview](https://harks-inc.github.io/fusion-skill/examples/view-preview.png)
 
-The examples use fixture prompts and generic reviewer names. Real review inputs should be published only after customer data, private project names, hostnames, and private repository identifiers are removed.
+The examples use fixture prompts and generic reviewer names. When sharing real review inputs, remove customer data, private project names, hostnames, and private repository identifiers first.
 
 ## Links
 
-- Japanese: [ja/fusion-skill.md](ja/fusion-skill.md)
-- Public package candidate: `00_workspace-ops/prototypes/service-architecture-samples/fusion-skill-oss/`
-- Planned English page: `https://soworks-jp.github.io/fusion-skill.html`
-- Planned Japanese page: `https://soworks-jp.github.io/ja/fusion-skill.html`
+- This page: `https://soworks-jp.github.io/fusion-skill.html`
+- Japanese guide: `https://soworks-jp.github.io/ja/fusion-skill.html`

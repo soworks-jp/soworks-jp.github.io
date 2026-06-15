@@ -2,6 +2,15 @@
 
 This is the unified GitHub Pages guide for SO Works OSS tools.
 
+## What This Site Covers
+
+The guide gives AI-agent developers and OSS maintainers one public entrypoint for SO Works tools:
+
+- `agent-workbench`
+- `agent-skill-shelf`
+- `agent-token-optimizer`
+- `fusion-skill`
+
 Published URL:
 
 - English: https://soworks-jp.github.io/

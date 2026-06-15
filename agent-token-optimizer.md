@@ -37,8 +37,7 @@ The examples use rounded fixture values and generic paths. Real local reports sh
 ## Links
 
 - Japanese: [ja/agent-token-optimizer.md](ja/agent-token-optimizer.md)
-- Product folder: `01_biz/projects/oss/products/agent-token-optimizer/`
-- Planned English page: `https://soworks-jp.github.io/agent-token-optimizer.html`
-- Planned Japanese page: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
+- This page: `https://soworks-jp.github.io/agent-token-optimizer.html`
+- Japanese guide: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
 - GitHub Pages examples: `docs/examples/`
 - Japanese guide: [ja/agent-token-optimizer.md](ja/agent-token-optimizer.md)

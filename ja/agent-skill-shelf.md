@@ -33,7 +33,6 @@ Agent Skill Shelf は、Codex / Claude Code / Gemini CLI / GitHub Copilot / Cont
 ## リンク
 
 - English summary: [../agent-skill-shelf.md](../agent-skill-shelf.md)
-- Product folder: `01_biz/projects/oss/products/agent-skill-shelf/`
-- Planned English page: `https://soworks-jp.github.io/agent-skill-shelf.html`
-- Planned Japanese page: `https://soworks-jp.github.io/ja/agent-skill-shelf.html`
+- 英語ガイド: `https://soworks-jp.github.io/agent-skill-shelf.html`
+- このページ: `https://soworks-jp.github.io/ja/agent-skill-shelf.html`
 - ローカルビュー: `01_biz/projects/oss/products/agent-skill-shelf-ja/docs/local-view.md`

@@ -35,7 +35,6 @@ tokenリスクが高い場所と、モデル選択の目安を出して。
 ## リンク
 
 - English summary: [../agent-token-optimizer.md](../agent-token-optimizer.md)
-- Product folder: `01_biz/projects/oss/products/agent-token-optimizer/`
-- Planned English page: `https://soworks-jp.github.io/agent-token-optimizer.html`
-- Planned Japanese page: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
+- 英語ガイド: `https://soworks-jp.github.io/agent-token-optimizer.html`
+- このページ: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
 - GitHub Pages examples: `docs/examples/`

@@ -34,7 +34,7 @@ title: AIエージェントOSSガイド
     <a class="sw-card" href="agent-workbench.html">
       <div class="sw-card-top">
         <span class="sw-icon">AW</span>
-        <span class="sw-badge">pre-public</span>
+        <span class="sw-badge">ガイド</span>
       </div>
       <h3>Agent Workbench</h3>
       <p>AI coding agentのタスク、claim、prompt、report、PR briefをローカル管理する。</p>
@@ -48,7 +48,7 @@ title: AIエージェントOSSガイド
     <a class="sw-card" href="agent-skill-shelf.html">
       <div class="sw-card-top">
         <span class="sw-icon cyan">SS</span>
-        <span class="sw-badge">pre-public</span>
+        <span class="sw-badge">ガイド</span>
       </div>
       <h3>Agent Skill Shelf</h3>
       <p>複数AIエージェント向けのskillをsource bundleとして管理・配布する。</p>
@@ -62,7 +62,7 @@ title: AIエージェントOSSガイド
     <a class="sw-card" href="agent-token-optimizer.html">
       <div class="sw-card-top">
         <span class="sw-icon green">TO</span>
-        <span class="sw-badge">pre-public</span>
+        <span class="sw-badge">ガイド</span>
       </div>
       <h3>Agent Token Optimizer</h3>
       <p>大きなrepoでagentに渡す前のcontext量、token risk、model routingを確認する。</p>
@@ -76,7 +76,7 @@ title: AIエージェントOSSガイド
     <a class="sw-card" href="fusion-skill.html">
       <div class="sw-card-top">
         <span class="sw-icon orange">FS</span>
-        <span class="sw-badge">pre-public</span>
+        <span class="sw-badge">ガイド</span>
       </div>
       <h3>Fusion Skill</h3>
       <p>AI回答を複数視点でレビューし、合意点、リスク、修正方針を統合する。</p>

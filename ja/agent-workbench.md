@@ -33,6 +33,5 @@ TASK-001をclaimして、実装後にreportとPR briefを残して。
 ## リンク
 
 - English summary: [../agent-workbench.md](../agent-workbench.md)
-- Product folder: `01_biz/projects/oss/products/agent-workbench/`
-- Planned English page: `https://soworks-jp.github.io/agent-workbench.html`
-- Planned Japanese page: `https://soworks-jp.github.io/ja/agent-workbench.html`
+- 英語ガイド: `https://soworks-jp.github.io/agent-workbench.html`
+- このページ: `https://soworks-jp.github.io/ja/agent-workbench.html`
