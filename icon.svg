@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">SO Works icon</title>
+  <desc id="desc">A compact SO Works brand mark with an S-shaped path and three workflow nodes.</desc>
+  <rect width="512" height="512" rx="112" fill="#172033"/>
+  <path d="M160 176C188 116 286 104 340 146C366 166 374 198 356 224C337 252 298 256 250 258C205 260 176 265 164 288C151 314 171 342 208 356C251 372 305 358 336 326" fill="none" stroke="#F8FAFC" stroke-width="42" stroke-linecap="round"/>
+  <path d="M176 336C206 386 294 400 348 354" fill="none" stroke="#38BDF8" stroke-width="42" stroke-linecap="round"/>
+  <circle cx="162" cy="176" r="22" fill="#F97316"/>
+  <circle cx="350" cy="146" r="18" fill="#22C55E"/>
+  <circle cx="348" cy="354" r="22" fill="#38BDF8"/>
+</svg>

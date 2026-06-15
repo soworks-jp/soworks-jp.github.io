@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 192" role="img" aria-labelledby="title desc">
+  <title id="title">SO Works lockup</title>
+  <desc id="desc">SO Works brand lockup with mark and wordmark.</desc>
+  <rect x="8" y="8" width="176" height="176" rx="40" fill="#172033"/>
+  <path d="M58 66C68 42 111 38 132 55C142 63 145 76 138 86C130 98 114 100 94 101C75 102 64 104 59 114C54 126 62 137 78 143C96 150 119 144 132 130" fill="none" stroke="#F8FAFC" stroke-width="16" stroke-linecap="round"/>
+  <path d="M65 134C78 155 115 160 137 140" fill="none" stroke="#38BDF8" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="59" cy="66" r="8" fill="#F97316"/>
+  <circle cx="136" cy="55" r="7" fill="#22C55E"/>
+  <circle cx="137" cy="140" r="8" fill="#38BDF8"/>
+  <text x="220" y="88" fill="#172033" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="48" font-weight="800" letter-spacing="0">SO Works</text>
+  <text x="222" y="128" fill="#667085" font-family="Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="22" font-weight="650" letter-spacing="0">Local-first tools for AI agent workflows</text>
+  <line x1="222" y1="150" x2="560" y2="150" stroke="#E6E9F0" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="586" cy="150" r="7" fill="#F97316"/>
+  <circle cx="612" cy="150" r="7" fill="#22C55E"/>
+  <circle cx="638" cy="150" r="7" fill="#38BDF8"/>
+</svg>

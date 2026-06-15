@@ -1,0 +1,15 @@
+{
+  "name": "SO Works OSS Guide",
+  "short_name": "SO Works",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#172033",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
