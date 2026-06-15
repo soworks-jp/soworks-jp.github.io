@@ -1,0 +1,16 @@
+title: SO Works OSS Guide
+description: Local-first OSS tools for AI agents, skills, reviews, and developer workflows
+theme: minima
+lang: en
+url: "https://soworks-jp.github.io"
+baseurl: ""
+github_username: soworks-jp
+
+header_pages:
+  - agent-workbench.md
+  - agent-skill-shelf.md
+  - agent-token-optimizer.md
+  - fusion-skill.md
+  - compare.md
+  - ja/index.md
+  - ja/compare.md

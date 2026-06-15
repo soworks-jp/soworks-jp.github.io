@@ -1,0 +1,48 @@
+{
+  "id": "oss-guide",
+  "name": "SO Works OSS Guide",
+  "projectType": "github-pages-site",
+  "category": "oss-docs",
+  "status": "draft",
+  "targetMarket": "ai-agent-developers",
+  "initialMarket": "global-and-japan",
+  "languages": {
+    "default": "en",
+    "secondary": "ja",
+    "lpCopy": "en",
+    "productUi": "en",
+    "imageGenText": "en"
+  },
+  "links": {
+    "plannedSite": "https://soworks-jp.github.io/",
+    "plannedJapaneseSite": "https://soworks-jp.github.io/ja/"
+  },
+  "projects": [
+    {
+      "id": "agent-workbench",
+      "en": "https://soworks-jp.github.io/agent-workbench.html",
+      "ja": "https://soworks-jp.github.io/ja/agent-workbench.html"
+    },
+    {
+      "id": "agent-skill-shelf",
+      "en": "https://soworks-jp.github.io/agent-skill-shelf.html",
+      "ja": "https://soworks-jp.github.io/ja/agent-skill-shelf.html"
+    },
+    {
+      "id": "agent-token-optimizer",
+      "en": "https://soworks-jp.github.io/agent-token-optimizer.html",
+      "ja": "https://soworks-jp.github.io/ja/agent-token-optimizer.html"
+    },
+    {
+      "id": "fusion-skill",
+      "en": "https://soworks-jp.github.io/fusion-skill.html",
+      "ja": "https://soworks-jp.github.io/ja/fusion-skill.html"
+    }
+  ],
+  "risk": {
+    "infraRisk": "low",
+    "manualGates": ["github-org-create", "github-pages-enable", "org-name-confirm"]
+  },
+  "createdAt": "2026-06-15",
+  "updatedAt": "2026-06-15"
+}
