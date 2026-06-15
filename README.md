@@ -13,8 +13,9 @@ The guide gives AI-agent developers and OSS maintainers one public entrypoint fo
 
 Published URL:
 
-- English: https://soworks-jp.github.io/
-- Japanese: https://soworks-jp.github.io/ja/
+- English: https://soworks.app/
+- Japanese: https://soworks.app/ja/
+- GitHub Pages fallback: https://soworks-jp.github.io/
 
 Each OSS has both English and Japanese product pages:
 
