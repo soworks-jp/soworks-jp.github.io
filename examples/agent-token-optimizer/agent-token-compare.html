@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Token Optimizer Example Compare</title>
+  <style>
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f9; color: #16202a; }
+    main { width: min(980px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 48px; }
+    h1 { margin: 0 0 8px; font-size: 30px; letter-spacing: 0; }
+    p { color: #657384; margin: 0 0 20px; }
+    .panel { background: #fff; border: 1px solid #dce3ea; border-radius: 8px; padding: 18px; margin-top: 16px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid #dce3ea; padding: 10px 8px; text-align: left; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .good { color: #2b8a3e; }
+    .bad { color: #c92a2a; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Agent Token Optimizer Compare</h1>
+    <p>sample-product-repo · before-cleanup → after-cleanup</p>
+    <section class="panel">
+      <h2>Token Summary</h2>
+      <table>
+        <thead><tr><th>Metric</th><th class="num">Before</th><th class="num">After</th><th class="num">Delta</th></tr></thead>
+        <tbody>
+          <tr><td>Total estimated tokens</td><td class="num">1,560,000</td><td class="num">1,248,000</td><td class="num good">-312,000</td></tr>
+          <tr><td>Recommended context tokens</td><td class="num">140,000</td><td class="num">92,000</td><td class="num good">-48,000</td></tr>
+          <tr><td>Reducible tokens</td><td class="num">1,420,000</td><td class="num">1,156,000</td><td class="num good">-264,000</td></tr>
+          <tr><td>Reduction rate</td><td class="num">91%</td><td class="num">93%</td><td class="num bad">+2%</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="panel">
+      <h2>Scores</h2>
+      <table>
+        <thead><tr><th>Score</th><th class="num">Before</th><th class="num">After</th><th class="num">Delta</th></tr></thead>
+        <tbody>
+          <tr><td>AI Readiness</td><td class="num">73</td><td class="num">82</td><td class="num bad">+9</td></tr>
+          <tr><td>Token Efficiency</td><td class="num">57</td><td class="num">71</td><td class="num bad">+14</td></tr>
+          <tr><td>Context Hygiene</td><td class="num">65</td><td class="num">76</td><td class="num bad">+11</td></tr>
+          <tr><td>Model Routing</td><td class="num">60</td><td class="num">68</td><td class="num bad">+8</td></tr>
+          <tr><td>Security Risk</td><td class="num">88</td><td class="num">91</td><td class="num bad">+3</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

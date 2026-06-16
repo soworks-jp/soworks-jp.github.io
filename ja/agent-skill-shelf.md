@@ -28,11 +28,10 @@ Agent Skill Shelf は、Codex / Claude Code / Gemini CLI / GitHub Copilot / Cont
 
 ![Agent Skill Board preview](https://harks-inc.github.io/agent-skill-shelf/examples/view-preview.png)
 
-サンプルはfixtureのskill名、汎用path、丸めたstatusだけを使います。実際のskill reportを公開する場合は、finding、内部path、secret関連の具体値、private skill名、host名が含まれていないことを確認します。
+サンプルは架空のskill名、汎用的なファイル名、丸めた状態だけを使います。自分のレポートを共有する前に、非公開のファイルパス、secretの詳細、private skill名、ホスト名を取り除いてください。
 
 ## リンク
 
 - English summary: [../agent-skill-shelf.md](../agent-skill-shelf.md)
-- 英語ガイド: `https://soworks-jp.github.io/agent-skill-shelf.html`
-- このページ: `https://soworks-jp.github.io/ja/agent-skill-shelf.html`
-- ローカルビュー: `01_biz/projects/oss/products/agent-skill-shelf-ja/docs/local-view.md`
+- 英語ページ: `https://soworks-jp.github.io/agent-skill-shelf.html`
+- 日本語ガイド: `https://soworks-jp.github.io/ja/agent-skill-shelf.html`

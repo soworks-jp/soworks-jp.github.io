@@ -26,18 +26,17 @@ It is for reducing context waste, spotting large or risky files, and giving mode
 
 ## Preview
 
-- [Example HTML report](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-report.html)
-- [Example dashboard](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-dashboard.html)
-- [Example compare](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-compare.html)
+- [Example HTML report](https://soworks.app/examples/agent-token-optimizer/agent-token-report.html)
+- [Example dashboard](https://soworks.app/examples/agent-token-optimizer/agent-token-dashboard.html)
+- [Example compare](https://soworks.app/examples/agent-token-optimizer/agent-token-compare.html)
+- [Examples index](https://soworks.app/examples/agent-token-optimizer/)
 
-![Agent Token Optimizer report preview](https://harks-inc.github.io/agent-token-optimizer/examples/report-preview.png)
+![Agent Token Optimizer report preview](https://soworks.app/examples/agent-token-optimizer/report-preview.png)
 
-The examples use rounded fixture values and generic paths. Real local reports should be published only after internal paths, secret-risk details, personal names, hostnames, and private repository identifiers are removed.
+The examples use rounded fixture values and generic paths. Before sharing your own reports, remove private file paths, secret details, personal names, hostnames, and private repository names.
 
 ## Links
 
 - Japanese: [ja/agent-token-optimizer.md](ja/agent-token-optimizer.md)
-- This page: `https://soworks-jp.github.io/agent-token-optimizer.html`
-- Japanese guide: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
-- GitHub Pages examples: `docs/examples/`
-- Japanese guide: [ja/agent-token-optimizer.md](ja/agent-token-optimizer.md)
+- This page: `https://soworks.app/agent-token-optimizer.html`
+- Japanese guide: `https://soworks.app/ja/agent-token-optimizer.html`

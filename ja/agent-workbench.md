@@ -28,10 +28,10 @@ TASK-001をclaimして、実装後にreportとPR briefを残して。
 
 ![Agent Workbench dashboard preview](https://harks-inc.github.io/agent-workbench/examples/view-preview.png)
 
-サンプルはfixtureのタスク名、丸めた件数、汎用pathだけを使います。実際の `.agent-work/` 生成物を公開する場合は、内部path、secret、個人名、private issue内容、ホスト名、private repo識別子が含まれていないことを確認します。
+サンプルは架空のタスク名、丸めた件数、汎用的なファイル名だけを使います。自分のレポートを共有する前に、非公開のファイルパス、secret、個人名、issue内容、ホスト名、private repo名を取り除いてください。
 
 ## リンク
 
 - English summary: [../agent-workbench.md](../agent-workbench.md)
-- 英語ガイド: `https://soworks-jp.github.io/agent-workbench.html`
-- このページ: `https://soworks-jp.github.io/ja/agent-workbench.html`
+- 英語ページ: `https://soworks-jp.github.io/agent-workbench.html`
+- 日本語ガイド: `https://soworks-jp.github.io/ja/agent-workbench.html`

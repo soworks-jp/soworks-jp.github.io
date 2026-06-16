@@ -14,8 +14,9 @@
     "imageGenText": "en"
   },
   "links": {
-    "plannedSite": "https://soworks-jp.github.io/",
-    "plannedJapaneseSite": "https://soworks-jp.github.io/ja/"
+    "plannedSite": "https://soworks.app/",
+    "plannedJapaneseSite": "https://soworks.app/ja/",
+    "fallbackSite": "https://soworks-jp.github.io/"
   },
   "projects": [
     {
@@ -30,8 +31,9 @@
     },
     {
       "id": "agent-token-optimizer",
-      "en": "https://soworks-jp.github.io/agent-token-optimizer.html",
-      "ja": "https://soworks-jp.github.io/ja/agent-token-optimizer.html"
+      "en": "https://soworks.app/agent-token-optimizer.html",
+      "ja": "https://soworks.app/ja/agent-token-optimizer.html",
+      "examples": "https://soworks.app/examples/agent-token-optimizer/"
     },
     {
       "id": "fusion-skill",

@@ -33,9 +33,10 @@ It turns repository TODOs, issue packs, roadmap items, missing tests, and review
 
 ![Agent Workbench dashboard preview](https://harks-inc.github.io/agent-workbench/examples/view-preview.png)
 
-The examples use fixture task names, rounded counts, and generic paths. When sharing real reports, remove internal paths, secrets, private issue content, hostnames, and private repository identifiers first.
+The examples use fixture task names, rounded counts, and generic paths. Before sharing your own reports, remove private file paths, secrets, issue details, hostnames, and private repository names.
 
 ## Links
 
+- Japanese: [ja/agent-workbench.md](ja/agent-workbench.md)
 - This page: `https://soworks-jp.github.io/agent-workbench.html`
 - Japanese guide: `https://soworks-jp.github.io/ja/agent-workbench.html`

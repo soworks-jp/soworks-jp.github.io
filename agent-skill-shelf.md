@@ -32,9 +32,10 @@ It treats `skills/<name>/` as the source of truth and generates platform-specifi
 
 ![Agent Skill Board preview](https://harks-inc.github.io/agent-skill-shelf/examples/view-preview.png)
 
-The examples use fixture skill names, generic paths, and rounded status data. When sharing real skill reports, remove internal paths, concrete secret-risk values, private skill names, hostnames, and private repository identifiers first.
+The examples use fixture skill names, generic paths, and rounded status data. Before sharing your own reports, remove private file paths, secret details, private skill names, hostnames, and private repository names.
 
 ## Links
 
+- Japanese: [ja/agent-skill-shelf.md](ja/agent-skill-shelf.md)
 - This page: `https://soworks-jp.github.io/agent-skill-shelf.html`
 - Japanese guide: `https://soworks-jp.github.io/ja/agent-skill-shelf.html`

@@ -25,3 +25,15 @@ Each OSS has both English and Japanese product pages:
 - Fusion Skill: `/fusion-skill.html` and `/ja/fusion-skill.html`
 
 The GitHub organization is `soworks-jp`.
+
+## Purpose
+
+Help developers choose the right SO Works OSS tool, then move into the package README, Japanese guide, or private-first release flow without guessing which project is current.
+
+## Local Preview
+
+Preview the site with any GitHub Pages compatible static server before publishing. Keep public pages free of local paths, private repository names, and internal release notes.
+
+## Publishing
+
+Publishing the guide requires GitHub Pages configuration for `soworks.app`, current package links, and a final public-content review.

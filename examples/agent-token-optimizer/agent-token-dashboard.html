@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Token Optimizer Example Dashboard</title>
+  <style>
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f9; color: #16202a; }
+    main { width: min(1080px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 48px; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    p { color: #657384; margin: 0; }
+    .grid { display: grid; gap: 16px; }
+    .kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 24px; }
+    .two { grid-template-columns: 1.2fr .8fr; margin-top: 16px; }
+    .panel { background: #fff; border: 1px solid #dce3ea; border-radius: 8px; padding: 18px; box-shadow: 0 1px 2px rgb(16 24 40 / 5%); }
+    .label { color: #657384; font-size: 13px; }
+    .value { display: block; margin-top: 8px; font-size: 26px; font-weight: 720; }
+    .trend { display: grid; grid-template-columns: repeat(6, 1fr); align-items: end; gap: 8px; height: 180px; margin-top: 16px; }
+    .bar { background: #1864ab; border-radius: 6px 6px 0 0; min-height: 24px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid #dce3ea; padding: 9px 8px; text-align: left; }
+    th { color: #657384; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    .good { color: #2b8a3e; }
+    .warn { color: #b7791f; }
+    @media (max-width: 900px) { .kpis, .two { grid-template-columns: 1fr; } main { width: min(100% - 20px, 1080px); } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Agent Token Optimizer Dashboard</h1>
+      <p>sample-product-repo · Example dashboard hosted from GitHub Pages</p>
+    </header>
+
+    <section class="grid kpis">
+      <div class="panel"><span class="label">Current total tokens</span><strong class="value">1.25M</strong></div>
+      <div class="panel"><span class="label">Recommended context</span><strong class="value">92K</strong></div>
+      <div class="panel"><span class="label">Reduction opportunity</span><strong class="value">93%</strong></div>
+      <div class="panel"><span class="label">Secret-risk files</span><strong class="value good">0</strong></div>
+    </section>
+
+    <section class="grid two">
+      <div class="panel">
+        <h2>Context Trend</h2>
+        <p>Fixture snapshots show token context shrinking as generated files and oversized docs are excluded.</p>
+        <div class="trend" aria-label="Token trend chart">
+          <div class="bar" style="height: 100%"></div>
+          <div class="bar" style="height: 88%"></div>
+          <div class="bar" style="height: 74%"></div>
+          <div class="bar" style="height: 58%"></div>
+          <div class="bar" style="height: 44%"></div>
+          <div class="bar" style="height: 32%"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Open Actions</h2>
+        <table>
+          <thead><tr><th>Action</th><th>Status</th></tr></thead>
+          <tbody>
+            <tr><td>Move generated assets out of default context</td><td class="warn">planned</td></tr>
+            <tr><td>Split long product spec</td><td class="warn">planned</td></tr>
+            <tr><td>Add model routing doc</td><td class="good">done</td></tr>
+            <tr><td>Confirm no secret values in reports</td><td class="good">done</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: 16px;">
+      <h2>Latest Snapshot</h2>
+      <table>
+        <thead><tr><th>Metric</th><th class="num">Value</th><th class="num">Change</th></tr></thead>
+        <tbody>
+          <tr><td>Total estimated tokens</td><td class="num">1,248,000</td><td class="num good">-312,000</td></tr>
+          <tr><td>Recommended context tokens</td><td class="num">92,000</td><td class="num good">-48,000</td></tr>
+          <tr><td>AI readiness score</td><td class="num">82</td><td class="num good">+9</td></tr>
+          <tr><td>Token efficiency score</td><td class="num">71</td><td class="num good">+14</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>

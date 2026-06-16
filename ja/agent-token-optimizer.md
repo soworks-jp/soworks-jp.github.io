@@ -23,18 +23,17 @@ tokenリスクが高い場所と、モデル選択の目安を出して。
 
 ## Preview
 
-- [HTML report サンプル](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-report.html)
-- [dashboard サンプル](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-dashboard.html)
-- [compare サンプル](https://harks-inc.github.io/agent-token-optimizer/examples/agent-token-compare.html)
-- [日本語のサンプル説明](https://harks-inc.github.io/agent-token-optimizer/examples/ja.html)
+- [HTML report サンプル](https://soworks.app/examples/agent-token-optimizer/agent-token-report.html)
+- [dashboard サンプル](https://soworks.app/examples/agent-token-optimizer/agent-token-dashboard.html)
+- [compare サンプル](https://soworks.app/examples/agent-token-optimizer/agent-token-compare.html)
+- [サンプル一覧](https://soworks.app/examples/agent-token-optimizer/)
 
-![Agent Token Optimizer report preview](https://harks-inc.github.io/agent-token-optimizer/examples/report-preview.png)
+![Agent Token Optimizer report preview](https://soworks.app/examples/agent-token-optimizer/report-preview.png)
 
-サンプルは丸めたfixture値と汎用pathだけを使います。実際のローカルreportを公開する場合は、内部path、secret riskの具体値、個人名、ホスト名、private repo識別子が入っていないことを確認してから公開します。
+サンプルは丸めた架空の値と汎用的なファイル名だけを使います。自分のレポートを共有する前に、非公開のファイルパス、secretの詳細、個人名、ホスト名、private repo名を取り除いてください。
 
 ## リンク
 
 - English summary: [../agent-token-optimizer.md](../agent-token-optimizer.md)
-- 英語ガイド: `https://soworks-jp.github.io/agent-token-optimizer.html`
-- このページ: `https://soworks-jp.github.io/ja/agent-token-optimizer.html`
-- GitHub Pages examples: `docs/examples/`
+- 英語ページ: `https://soworks.app/agent-token-optimizer.html`
+- 日本語ガイド: `https://soworks.app/ja/agent-token-optimizer.html`
