@@ -30,7 +30,7 @@ It turns repository TODOs, issue packs, roadmap items, missing tests, and review
 
 - [Example local dashboard](https://soworks.app/examples/agent-workbench/agent-workbench-dashboard.html)
 - [Examples index](https://soworks.app/examples/agent-workbench/)
-- [Japanese examples guide](https://soworks.app/examples/agent-workbench/ja.html)
+- [Japanese examples guide](https://soworks.app/examples/agent-workbench/ja)
 
 ![Agent Workbench dashboard preview](https://soworks.app/examples/agent-workbench/view-preview.png)
 

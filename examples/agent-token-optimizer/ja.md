@@ -11,7 +11,7 @@ Agent Token Optimizer が生成するHTML artifactの静的サンプルです。
 - [HTML report サンプル](agent-token-report.html)
 - [dashboard サンプル](agent-token-dashboard.html)
 - [compare サンプル](agent-token-compare.html)
-- [English examples guide](index.html)
+- [English examples guide](./)
 
 ![Agent Token Optimizer report preview](report-preview.png)
 

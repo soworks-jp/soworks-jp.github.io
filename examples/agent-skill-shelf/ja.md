@@ -9,7 +9,7 @@ lang: ja
 Agent Skill Shelf が生成するskill boardとreview artifactの静的サンプルです。
 
 - [skill board サンプル](agent-skill-board.html)
-- [English examples guide](index.html)
+- [English examples guide](./)
 
 ![Agent Skill Board preview](view-preview.png)
 

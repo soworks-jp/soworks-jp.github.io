@@ -24,7 +24,7 @@ TASK-001をclaimして、実装後にreportとPR briefを残して。
 ## Preview
 
 - [ローカルdashboardサンプル](https://soworks.app/examples/agent-workbench/agent-workbench-dashboard.html)
-- [日本語のサンプル説明](https://soworks.app/examples/agent-workbench/ja.html)
+- [日本語のサンプル説明](https://soworks.app/examples/agent-workbench/ja)
 - [英語のサンプル一覧](https://soworks.app/examples/agent-workbench/)
 
 ![Agent Workbench dashboard preview](https://soworks.app/examples/agent-workbench/view-preview.png)

@@ -27,7 +27,7 @@ tokenリスクが高い場所と、モデル選択の目安を出して。
 - [dashboard サンプル](https://soworks.app/examples/agent-token-optimizer/agent-token-dashboard.html)
 - [compare サンプル](https://soworks.app/examples/agent-token-optimizer/agent-token-compare.html)
 - [サンプル一覧](https://soworks.app/examples/agent-token-optimizer/)
-- [日本語のサンプル説明](https://soworks.app/examples/agent-token-optimizer/ja.html)
+- [日本語のサンプル説明](https://soworks.app/examples/agent-token-optimizer/ja)
 
 ![Agent Token Optimizer report preview](https://soworks.app/examples/agent-token-optimizer/report-preview.png)
 

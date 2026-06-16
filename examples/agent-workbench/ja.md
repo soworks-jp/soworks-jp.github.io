@@ -9,7 +9,7 @@ lang: ja
 Agent Workbench が生成するローカルdashboardの静的サンプルです。
 
 - [ローカルdashboardサンプル](agent-workbench-dashboard.html)
-- [English examples guide](index.html)
+- [English examples guide](./)
 
 ![Agent Workbench dashboard preview](view-preview.gif)
 

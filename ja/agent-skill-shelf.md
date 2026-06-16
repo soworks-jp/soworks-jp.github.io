@@ -24,7 +24,7 @@ Agent Skill Shelf は、Codex / Claude Code / Gemini CLI / GitHub Copilot / Cont
 ## Preview
 
 - [skill board サンプル](https://soworks.app/examples/agent-skill-shelf/agent-skill-board.html)
-- [日本語のサンプル説明](https://soworks.app/examples/agent-skill-shelf/ja.html)
+- [日本語のサンプル説明](https://soworks.app/examples/agent-skill-shelf/ja)
 - [英語のサンプル一覧](https://soworks.app/examples/agent-skill-shelf/)
 
 ![Agent Skill Board preview](https://soworks.app/examples/agent-skill-shelf/view-preview.png)

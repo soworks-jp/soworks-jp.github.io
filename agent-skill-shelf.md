@@ -29,7 +29,7 @@ It treats `skills/<name>/` as the source of truth and generates platform-specifi
 
 - [Example skill board](https://soworks.app/examples/agent-skill-shelf/agent-skill-board.html)
 - [Examples index](https://soworks.app/examples/agent-skill-shelf/)
-- [Japanese examples guide](https://soworks.app/examples/agent-skill-shelf/ja.html)
+- [Japanese examples guide](https://soworks.app/examples/agent-skill-shelf/ja)
 
 ![Agent Skill Board preview](https://soworks.app/examples/agent-skill-shelf/view-preview.png)
 
