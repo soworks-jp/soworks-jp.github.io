@@ -8,9 +8,9 @@ title: AIエージェントOSSガイド
   <h1>AIエージェント運用を、ローカルで安全に強くする。</h1>
   <p>Codex、Claude Code、Gemini CLI、GitHub Copilot、Cursor、Continue などを実際のrepoで使う人向けに、タスク管理、スキル配布、context最適化、複数視点レビューをまとめます。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="agent-workbench.html">プロジェクトを見る</a>
+    <a class="sw-button" href="agent-workbench/">プロジェクトを見る</a>
     <a class="sw-button secondary" href="../">English</a>
-    <a class="sw-button secondary" href="compare.html">使い分けを見る</a>
+    <a class="sw-button secondary" href="compare/">使い分けを見る</a>
   </div>
   <div class="sw-chip-row" aria-label="Guide filters">
     <span class="sw-chip">OSS</span>
@@ -27,11 +27,11 @@ title: AIエージェントOSSガイド
       <h2>プロジェクト</h2>
       <p>AI coding agentを安全に、再現性高く使うための小さなOSS群です。</p>
     </div>
-    <a href="compare.html">比較を見る</a>
+    <a href="compare/">比較を見る</a>
   </div>
 
   <div class="sw-grid">
-    <a class="sw-card" href="agent-workbench.html">
+    <a class="sw-card" href="agent-workbench/">
       <div class="sw-card-top">
         <span class="sw-icon">AW</span>
         <span class="sw-badge">ガイド</span>
@@ -45,7 +45,7 @@ title: AIエージェントOSSガイド
       </div>
     </a>
 
-    <a class="sw-card" href="agent-skill-shelf.html">
+    <a class="sw-card" href="agent-skill-shelf/">
       <div class="sw-card-top">
         <span class="sw-icon cyan">SS</span>
         <span class="sw-badge">ガイド</span>
@@ -59,7 +59,7 @@ title: AIエージェントOSSガイド
       </div>
     </a>
 
-    <a class="sw-card" href="agent-token-optimizer.html">
+    <a class="sw-card" href="agent-token-optimizer/">
       <div class="sw-card-top">
         <span class="sw-icon green">TO</span>
         <span class="sw-badge">ガイド</span>
@@ -73,7 +73,7 @@ title: AIエージェントOSSガイド
       </div>
     </a>
 
-    <a class="sw-card" href="fusion-skill.html">
+    <a class="sw-card" href="fusion-skill/">
       <div class="sw-card-top">
         <span class="sw-icon orange">FS</span>
         <span class="sw-badge">ガイド</span>
@@ -93,7 +93,7 @@ title: AIエージェントOSSガイド
   <h2>英語READMEは短く、日本語は導入文脈まで厚く。</h2>
   <p>OSS本体は英語READMEを一次情報にし、日本語ページでは「何に使うか」「どう依頼するか」「安全に導入するには何を見るか」を補足します。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="compare.html">OSSの使い分けを見る</a>
+    <a class="sw-button" href="compare/">OSSの使い分けを見る</a>
     <a class="sw-button secondary" href="https://github.com/soworks-jp">GitHub organization</a>
   </div>
 </section>

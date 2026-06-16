@@ -21,26 +21,26 @@
   "projects": [
     {
       "id": "agent-workbench",
-      "en": "https://soworks.app/agent-workbench.html",
-      "ja": "https://soworks.app/ja/agent-workbench.html",
+      "en": "https://soworks.app/agent-workbench/",
+      "ja": "https://soworks.app/ja/agent-workbench/",
       "examples": "https://soworks.app/examples/agent-workbench/"
     },
     {
       "id": "agent-skill-shelf",
-      "en": "https://soworks.app/agent-skill-shelf.html",
-      "ja": "https://soworks.app/ja/agent-skill-shelf.html",
+      "en": "https://soworks.app/agent-skill-shelf/",
+      "ja": "https://soworks.app/ja/agent-skill-shelf/",
       "examples": "https://soworks.app/examples/agent-skill-shelf/"
     },
     {
       "id": "agent-token-optimizer",
-      "en": "https://soworks.app/agent-token-optimizer.html",
-      "ja": "https://soworks.app/ja/agent-token-optimizer.html",
+      "en": "https://soworks.app/agent-token-optimizer/",
+      "ja": "https://soworks.app/ja/agent-token-optimizer/",
       "examples": "https://soworks.app/examples/agent-token-optimizer/"
     },
     {
       "id": "fusion-skill",
-      "en": "https://soworks.app/fusion-skill.html",
-      "ja": "https://soworks.app/ja/fusion-skill.html"
+      "en": "https://soworks.app/fusion-skill/",
+      "ja": "https://soworks.app/ja/fusion-skill/"
     }
   ],
   "risk": {

@@ -2,6 +2,7 @@
 layout: page
 title: Agent Workbench
 lang: en
+permalink: /agent-workbench/
 ---
 
 # Agent Workbench
@@ -38,6 +39,6 @@ The examples use fixture task names, rounded counts, and generic paths. Before s
 
 ## Links
 
-- Japanese: [ja/agent-workbench.md](ja/agent-workbench.md)
-- This page: `https://soworks.app/agent-workbench.html`
-- Japanese guide: `https://soworks.app/ja/agent-workbench.html`
+- Japanese: [ja/agent-workbench/](/ja/agent-workbench/)
+- This page: `https://soworks.app/agent-workbench/`
+- Japanese guide: `https://soworks.app/ja/agent-workbench/`

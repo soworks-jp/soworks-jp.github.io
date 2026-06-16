@@ -2,6 +2,7 @@
 layout: page
 title: Agent Token Optimizer
 lang: en
+permalink: /agent-token-optimizer/
 ---
 
 # Agent Token Optimizer
@@ -38,6 +39,6 @@ The examples use rounded fixture values and generic paths. Before sharing your o
 
 ## Links
 
-- Japanese: [ja/agent-token-optimizer.md](ja/agent-token-optimizer.md)
-- This page: `https://soworks.app/agent-token-optimizer.html`
-- Japanese guide: `https://soworks.app/ja/agent-token-optimizer.html`
+- Japanese: [ja/agent-token-optimizer/](/ja/agent-token-optimizer/)
+- This page: `https://soworks.app/agent-token-optimizer/`
+- Japanese guide: `https://soworks.app/ja/agent-token-optimizer/`

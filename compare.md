@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Compare
+permalink: /compare/
 ---
 
 # Compare
@@ -16,5 +17,5 @@ The projects are intentionally small and local-first. Hosted services, custom do
 
 ## Links
 
-- Japanese: [ja/compare.md](ja/compare.md)
-- English top: [index.md](index.md)
+- Japanese: [ja/compare/](/ja/compare/)
+- English top: [Home](/)

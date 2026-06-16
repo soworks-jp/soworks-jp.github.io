@@ -2,6 +2,7 @@
 layout: page
 title: 比較
 lang: ja
+permalink: /ja/compare/
 ---
 
 # 比較
@@ -24,5 +25,5 @@ lang: ja
 
 ## Links
 
-- English: [../compare.md](../compare.md)
-- 日本語トップ: [index.md](index.md)
+- English: [../compare/](/compare/)
+- 日本語トップ: [Home](/ja/)

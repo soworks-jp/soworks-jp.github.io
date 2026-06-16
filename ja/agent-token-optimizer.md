@@ -2,6 +2,7 @@
 layout: page
 title: Agent Token Optimizer
 lang: ja
+permalink: /ja/agent-token-optimizer/
 ---
 
 # Agent Token Optimizer
@@ -35,6 +36,6 @@ tokenリスクが高い場所と、モデル選択の目安を出して。
 
 ## リンク
 
-- English summary: [../agent-token-optimizer.md](../agent-token-optimizer.md)
-- 英語ページ: `https://soworks.app/agent-token-optimizer.html`
-- 日本語ガイド: `https://soworks.app/ja/agent-token-optimizer.html`
+- English summary: [../agent-token-optimizer/](/agent-token-optimizer/)
+- 英語ページ: `https://soworks.app/agent-token-optimizer/`
+- 日本語ガイド: `https://soworks.app/ja/agent-token-optimizer/`

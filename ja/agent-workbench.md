@@ -2,6 +2,7 @@
 layout: page
 title: Agent Workbench
 lang: ja
+permalink: /ja/agent-workbench/
 ---
 
 # Agent Workbench
@@ -33,6 +34,6 @@ TASK-001をclaimして、実装後にreportとPR briefを残して。
 
 ## リンク
 
-- English summary: [../agent-workbench.md](../agent-workbench.md)
-- 英語ページ: `https://soworks.app/agent-workbench.html`
-- 日本語ガイド: `https://soworks.app/ja/agent-workbench.html`
+- English summary: [../agent-workbench/](/agent-workbench/)
+- 英語ページ: `https://soworks.app/agent-workbench/`
+- 日本語ガイド: `https://soworks.app/ja/agent-workbench/`

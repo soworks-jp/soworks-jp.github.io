@@ -19,10 +19,10 @@ Published URL:
 
 Each OSS has both English and Japanese product pages:
 
-- Agent Workbench: `/agent-workbench.html` and `/ja/agent-workbench.html`
-- Agent Skill Shelf: `/agent-skill-shelf.html` and `/ja/agent-skill-shelf.html`
-- Agent Token Optimizer: `/agent-token-optimizer.html` and `/ja/agent-token-optimizer.html`
-- Fusion Skill: `/fusion-skill.html` and `/ja/fusion-skill.html`
+- Agent Workbench: `/agent-workbench/` and `/ja/agent-workbench/`
+- Agent Skill Shelf: `/agent-skill-shelf/` and `/ja/agent-skill-shelf/`
+- Agent Token Optimizer: `/agent-token-optimizer/` and `/ja/agent-token-optimizer/`
+- Fusion Skill: `/fusion-skill/` and `/ja/fusion-skill/`
 
 The GitHub organization is `soworks-jp`.
 

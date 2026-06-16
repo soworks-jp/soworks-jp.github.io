@@ -2,6 +2,7 @@
 layout: page
 title: Agent Skill Shelf
 lang: en
+permalink: /agent-skill-shelf/
 ---
 
 # Agent Skill Shelf
@@ -37,6 +38,6 @@ The examples use fixture skill names, generic paths, and rounded status data. Be
 
 ## Links
 
-- Japanese: [ja/agent-skill-shelf.md](ja/agent-skill-shelf.md)
-- This page: `https://soworks.app/agent-skill-shelf.html`
-- Japanese guide: `https://soworks.app/ja/agent-skill-shelf.html`
+- Japanese: [ja/agent-skill-shelf/](/ja/agent-skill-shelf/)
+- This page: `https://soworks.app/agent-skill-shelf/`
+- Japanese guide: `https://soworks.app/ja/agent-skill-shelf/`

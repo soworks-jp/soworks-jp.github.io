@@ -2,6 +2,7 @@
 layout: page
 title: Fusion Skill
 lang: en
+permalink: /fusion-skill/
 ---
 
 # Fusion Skill
@@ -26,6 +27,6 @@ It is a local, prompt-based skill. It does not require an API key or a SaaS acco
 
 ## Links
 
-- Japanese: [ja/fusion-skill.md](ja/fusion-skill.md)
-- This page: `https://soworks.app/fusion-skill.html`
-- Japanese guide: `https://soworks.app/ja/fusion-skill.html`
+- Japanese: [ja/fusion-skill/](/ja/fusion-skill/)
+- This page: `https://soworks.app/fusion-skill/`
+- Japanese guide: `https://soworks.app/ja/fusion-skill/`

@@ -8,9 +8,9 @@ title: OSS tools for AI agent workflows
   <h1>Tools for AI agent workflows.</h1>
   <p>Local-first OSS projects for people who run Codex, Claude Code, Gemini CLI, GitHub Copilot, Cursor, Continue, and other AI coding assistants in real repositories.</p>
   <div class="sw-actions">
-    <a class="sw-button" href="agent-workbench.html">Explore projects</a>
+    <a class="sw-button" href="agent-workbench/">Explore projects</a>
     <a class="sw-button secondary" href="ja/">日本語で読む</a>
-    <a class="sw-button secondary" href="compare.html">Compare tools</a>
+    <a class="sw-button secondary" href="compare/">Compare tools</a>
   </div>
   <div class="sw-chip-row" aria-label="Guide filters">
     <span class="sw-chip">Open Source</span>
@@ -27,11 +27,11 @@ title: OSS tools for AI agent workflows
       <h2>Featured projects</h2>
       <p>Small, composable tools for safer and more repeatable agent work.</p>
     </div>
-    <a href="compare.html">View comparison</a>
+    <a href="compare/">View comparison</a>
   </div>
 
   <div class="sw-grid">
-    <a class="sw-card" href="agent-workbench.html">
+    <a class="sw-card" href="agent-workbench/">
       <div class="sw-card-top">
         <span class="sw-icon">AW</span>
         <span class="sw-badge">Guide</span>
@@ -45,7 +45,7 @@ title: OSS tools for AI agent workflows
       </div>
     </a>
 
-    <a class="sw-card" href="agent-skill-shelf.html">
+    <a class="sw-card" href="agent-skill-shelf/">
       <div class="sw-card-top">
         <span class="sw-icon cyan">SS</span>
         <span class="sw-badge">Guide</span>
@@ -59,7 +59,7 @@ title: OSS tools for AI agent workflows
       </div>
     </a>
 
-    <a class="sw-card" href="agent-token-optimizer.html">
+    <a class="sw-card" href="agent-token-optimizer/">
       <div class="sw-card-top">
         <span class="sw-icon green">TO</span>
         <span class="sw-badge">Guide</span>
@@ -73,7 +73,7 @@ title: OSS tools for AI agent workflows
       </div>
     </a>
 
-    <a class="sw-card" href="fusion-skill.html">
+    <a class="sw-card" href="fusion-skill/">
       <div class="sw-card-top">
         <span class="sw-icon orange">FS</span>
         <span class="sw-badge">Guide</span>
