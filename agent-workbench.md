@@ -28,15 +28,16 @@ It turns repository TODOs, issue packs, roadmap items, missing tests, and review
 
 ## Preview
 
-- [Example local dashboard](https://harks-inc.github.io/agent-workbench/examples/agent-workbench-dashboard.html)
-- [Examples index](https://harks-inc.github.io/agent-workbench/examples/)
+- [Example local dashboard](https://soworks.app/examples/agent-workbench/agent-workbench-dashboard.html)
+- [Examples index](https://soworks.app/examples/agent-workbench/)
+- [Japanese examples guide](https://soworks.app/examples/agent-workbench/ja.html)
 
-![Agent Workbench dashboard preview](https://harks-inc.github.io/agent-workbench/examples/view-preview.png)
+![Agent Workbench dashboard preview](https://soworks.app/examples/agent-workbench/view-preview.png)
 
 The examples use fixture task names, rounded counts, and generic paths. Before sharing your own reports, remove private file paths, secrets, issue details, hostnames, and private repository names.
 
 ## Links
 
 - Japanese: [ja/agent-workbench.md](ja/agent-workbench.md)
-- This page: `https://soworks-jp.github.io/agent-workbench.html`
-- Japanese guide: `https://soworks-jp.github.io/ja/agent-workbench.html`
+- This page: `https://soworks.app/agent-workbench.html`
+- Japanese guide: `https://soworks.app/ja/agent-workbench.html`

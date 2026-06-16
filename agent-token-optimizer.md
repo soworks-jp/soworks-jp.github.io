@@ -30,6 +30,7 @@ It is for reducing context waste, spotting large or risky files, and giving mode
 - [Example dashboard](https://soworks.app/examples/agent-token-optimizer/agent-token-dashboard.html)
 - [Example compare](https://soworks.app/examples/agent-token-optimizer/agent-token-compare.html)
 - [Examples index](https://soworks.app/examples/agent-token-optimizer/)
+- [Japanese examples guide](https://soworks.app/examples/agent-token-optimizer/ja.html)
 
 ![Agent Token Optimizer report preview](https://soworks.app/examples/agent-token-optimizer/report-preview.png)
 

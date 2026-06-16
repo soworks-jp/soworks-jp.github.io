@@ -21,13 +21,15 @@
   "projects": [
     {
       "id": "agent-workbench",
-      "en": "https://soworks-jp.github.io/agent-workbench.html",
-      "ja": "https://soworks-jp.github.io/ja/agent-workbench.html"
+      "en": "https://soworks.app/agent-workbench.html",
+      "ja": "https://soworks.app/ja/agent-workbench.html",
+      "examples": "https://soworks.app/examples/agent-workbench/"
     },
     {
       "id": "agent-skill-shelf",
-      "en": "https://soworks-jp.github.io/agent-skill-shelf.html",
-      "ja": "https://soworks-jp.github.io/ja/agent-skill-shelf.html"
+      "en": "https://soworks.app/agent-skill-shelf.html",
+      "ja": "https://soworks.app/ja/agent-skill-shelf.html",
+      "examples": "https://soworks.app/examples/agent-skill-shelf/"
     },
     {
       "id": "agent-token-optimizer",
@@ -37,8 +39,8 @@
     },
     {
       "id": "fusion-skill",
-      "en": "https://soworks-jp.github.io/fusion-skill.html",
-      "ja": "https://soworks-jp.github.io/ja/fusion-skill.html"
+      "en": "https://soworks.app/fusion-skill.html",
+      "ja": "https://soworks.app/ja/fusion-skill.html"
     }
   ],
   "risk": {

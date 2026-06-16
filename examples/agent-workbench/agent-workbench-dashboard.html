@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Workbench Example Dashboard</title>
+  <style>
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f6f7f9; color: #16202a; }
+    main { width: min(1100px, calc(100% - 32px)); margin: 0 auto; padding: 32px 0 48px; }
+    h1 { margin: 0 0 8px; font-size: 32px; letter-spacing: 0; }
+    h2 { margin: 0 0 12px; font-size: 18px; }
+    p { margin: 0; color: #657384; }
+    .grid { display: grid; gap: 16px; }
+    .metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 24px; }
+    .two { grid-template-columns: 1.1fr .9fr; margin-top: 16px; }
+    .panel { background: #fff; border: 1px solid #dce3ea; border-radius: 8px; padding: 18px; box-shadow: 0 1px 2px rgb(16 24 40 / 5%); }
+    .label { color: #657384; font-size: 13px; }
+    .value { display: block; margin-top: 8px; font-size: 28px; font-weight: 720; }
+    .badge { display: inline-block; border: 1px solid #dce3ea; border-radius: 999px; padding: 2px 8px; color: #657384; font-size: 12px; }
+    .p1 { color: #c92a2a; background: #fff5f5; border-color: #ffc9c9; }
+    .p2 { color: #b7791f; background: #fff9db; border-color: #ffe8a3; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { border-bottom: 1px solid #dce3ea; padding: 9px 8px; text-align: left; vertical-align: top; }
+    th { color: #657384; }
+    .path { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    @media (max-width: 900px) { .metrics, .two { grid-template-columns: 1fr; } main { width: min(100% - 20px, 1100px); } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Agent Workbench Local View</h1>
+      <p>sample-maintainer-repo · safe GitHub Pages preview</p>
+    </header>
+    <section class="panel" style="margin-top: 16px;">
+      <p>This preview uses fixture task names and generic paths. It is not a real private work queue.</p>
+    </section>
+    <section class="grid metrics">
+      <div class="panel"><span class="label">Ready tasks</span><strong class="value">12</strong></div>
+      <div class="panel"><span class="label">Claimed leases</span><strong class="value">3</strong></div>
+      <div class="panel"><span class="label">Review queue</span><strong class="value">5</strong></div>
+      <div class="panel"><span class="label">Blocked</span><strong class="value">1</strong></div>
+    </section>
+    <section class="grid two">
+      <div class="panel">
+        <h2>Task Board</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Task</th><th>Priority</th><th>Suggested agent</th></tr></thead>
+          <tbody>
+            <tr><td class="path">TASK-001</td><td>Add missing auth callback test</td><td><span class="badge p1">P1</span></td><td>Codex</td></tr>
+            <tr><td class="path">TASK-002</td><td>Split oversized AGENTS.md router</td><td><span class="badge p2">P2</span></td><td>Claude Code</td></tr>
+            <tr><td class="path">TASK-003</td><td>Review onboarding copy</td><td><span class="badge">P3</span></td><td>Gemini CLI</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="panel">
+        <h2>Maintainer Flow</h2>
+        <table>
+          <tbody>
+            <tr><td>Scout</td><td>Find local TODOs and missing tests</td></tr>
+            <tr><td>Route</td><td>Choose agent/model/skill/human reviewer</td></tr>
+            <tr><td>Claim</td><td>Prevent agents from editing the same task</td></tr>
+            <tr><td>Review</td><td>Leave reports and PR briefs for humans</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

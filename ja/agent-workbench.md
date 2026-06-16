@@ -23,15 +23,16 @@ TASK-001をclaimして、実装後にreportとPR briefを残して。
 
 ## Preview
 
-- [ローカルdashboardサンプル](https://harks-inc.github.io/agent-workbench/examples/agent-workbench-dashboard.html)
-- [日本語のサンプル説明](https://harks-inc.github.io/agent-workbench/examples/ja.html)
+- [ローカルdashboardサンプル](https://soworks.app/examples/agent-workbench/agent-workbench-dashboard.html)
+- [日本語のサンプル説明](https://soworks.app/examples/agent-workbench/ja.html)
+- [英語のサンプル一覧](https://soworks.app/examples/agent-workbench/)
 
-![Agent Workbench dashboard preview](https://harks-inc.github.io/agent-workbench/examples/view-preview.png)
+![Agent Workbench dashboard preview](https://soworks.app/examples/agent-workbench/view-preview.png)
 
 サンプルは架空のタスク名、丸めた件数、汎用的なファイル名だけを使います。自分のレポートを共有する前に、非公開のファイルパス、secret、個人名、issue内容、ホスト名、private repo名を取り除いてください。
 
 ## リンク
 
 - English summary: [../agent-workbench.md](../agent-workbench.md)
-- 英語ページ: `https://soworks-jp.github.io/agent-workbench.html`
-- 日本語ガイド: `https://soworks-jp.github.io/ja/agent-workbench.html`
+- 英語ページ: `https://soworks.app/agent-workbench.html`
+- 日本語ガイド: `https://soworks.app/ja/agent-workbench.html`

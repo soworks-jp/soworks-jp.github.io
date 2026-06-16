@@ -24,17 +24,8 @@ It is a local, prompt-based skill. It does not require an API key or a SaaS acco
 - Codex-ready implementation instruction generation
 - Agent-specific install targets
 
-## Preview
-
-- [Example Fusion Skill view](https://harks-inc.github.io/fusion-skill/examples/fusion-skill-view.html)
-- [Examples index](https://harks-inc.github.io/fusion-skill/examples/)
-
-![Fusion Skill view preview](https://harks-inc.github.io/fusion-skill/examples/view-preview.png)
-
-The examples use fixture prompts and generic reviewer names. Before sharing your own review inputs, remove customer data, private project names, hostnames, and private repository names.
-
 ## Links
 
 - Japanese: [ja/fusion-skill.md](ja/fusion-skill.md)
-- This page: `https://soworks-jp.github.io/fusion-skill.html`
-- Japanese guide: `https://soworks-jp.github.io/ja/fusion-skill.html`
+- This page: `https://soworks.app/fusion-skill.html`
+- Japanese guide: `https://soworks.app/ja/fusion-skill.html`

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Skill Shelf Example Board</title>
+  <style>
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f7f8fa; color: #172026; }
+    header { padding: 24px; background: #16202a; color: #fff; }
+    main { max-width: 1120px; margin: 0 auto; padding: 20px; }
+    h1 { margin: 0 0 6px; letter-spacing: 0; }
+    p { margin: 0; color: #667085; }
+    header p { color: #c9d1d9; }
+    .controls { display: grid; grid-template-columns: 1fr 160px 160px 160px; gap: 12px; margin-bottom: 16px; }
+    input, select { padding: 10px 12px; border: 1px solid #c9d1d9; border-radius: 6px; font: inherit; }
+    .skill { background: #fff; border: 1px solid #d8dee4; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+    .summary { display: grid; grid-template-columns: 1fr auto auto; gap: 10px; align-items: center; padding: 14px 16px; }
+    small { display: block; color: #667085; margin-top: 2px; }
+    .pill { border: 1px solid #c9d1d9; border-radius: 999px; padding: 3px 9px; font-size: 12px; color: #344054; }
+    .detail { border-top: 1px solid #e5e7eb; padding: 16px; }
+    code { background: #f1f5f9; padding: 1px 4px; border-radius: 4px; }
+    @media (max-width: 720px) { .controls, .summary { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Agent Skill Board</h1>
+    <p>sample-skill-shelf · static GitHub Pages preview</p>
+  </header>
+  <main>
+    <div class="controls">
+      <input type="search" placeholder="Search skills">
+      <select><option>All status</option></select>
+      <select><option>All severity</option></select>
+      <select><option>All platforms</option></select>
+    </div>
+    <article class="skill">
+      <div class="summary"><span><strong>Release Checklist</strong><small>release-checklist</small></span><span class="pill">OK</span><span class="pill">LOW</span></div>
+      <section class="detail">
+        <p>Reusable release checklist for AI coding agents.</p>
+        <p>Project deploy: <code>.codex/skills/release-checklist/SKILL.md</code></p>
+      </section>
+    </article>
+    <article class="skill">
+      <div class="summary"><span><strong>Security Review</strong><small>security-review</small></span><span class="pill">NEEDS_REVIEW</span><span class="pill">MEDIUM</span></div>
+      <section class="detail">
+        <p>Static review helper with scripts and references that should be checked before install.</p>
+        <p>Improvement hint: add test prompts and clearer trigger examples.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>
