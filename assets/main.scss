@@ -53,6 +53,30 @@ body {
   line-height: 1.2;
 }
 
+.sw-site-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.sw-site-brand:hover {
+  text-decoration: none;
+}
+
+.sw-site-brand span {
+  white-space: nowrap;
+}
+
+.sw-site-logo {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  box-shadow: 0 8px 22px rgba(23, 32, 51, 0.16);
+}
+
 .site-nav {
   position: relative;
   z-index: 1001;
@@ -344,6 +368,22 @@ body {
   .site-header > .wrapper {
     display: block;
     min-height: 55.95px;
+  }
+
+  .sw-site-brand {
+    padding-right: 54px;
+  }
+
+  .sw-site-brand span {
+    overflow: hidden;
+    font-size: 1.05rem;
+    text-overflow: ellipsis;
+  }
+
+  .sw-site-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
   }
 
   .site-nav {
