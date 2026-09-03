@@ -7,13 +7,13 @@ permalink: /agent-workbench/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Workbench · Lead product</span>
+  <span class="sw-kicker">Agent Workbench · Pilot now · Public OSS release planned</span>
   <h1>Coordinate coding agents without adding another control plane.</h1>
   <p>Agent Workbench is a local-first operating layer for real coding-agent work: tasks, route decisions, claim leases, prompts, handoffs, reports, review, and reusable completion memory live with the repository.</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/agent-workbench">View on GitHub</a>
-    <a class="sw-button secondary" href="https://github.com/soworks-jp/agent-workbench/issues/106">Join the 7-day design-partner pilot</a>
+    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Join pilot / release waitlist</a>
     <a class="sw-button secondary" href="/examples/agent-workbench/">See examples</a>
+    <a class="sw-button secondary" href="/oss/#agent-workbench">Release status</a>
   </div>
 </section>
 
@@ -76,13 +76,17 @@ Maintainers can aggregate consenting summaries locally with `awb adoption aggreg
 
 <div class="sw-callout"><strong>Good pilot fit:</strong> solo developers, OSS maintainers, small engineering teams, and AI tooling/platform engineers already using coding agents on real repositories.</div>
 
-[Join the Agent Workbench design-partner pilot →](https://github.com/soworks-jp/agent-workbench/issues/106)
+[Join the public Agent Workbench pilot / release waitlist →](https://github.com/soworks-jp/soworks-jp.github.io/issues/3)
+
+## Public release status
+
+Agent Workbench is being prepared for a public OSS release. The implementation and pilot exist today, but the product repository remains private while packaging, public documentation, and release gates are finalized. The public repository link will appear here only after it is actually accessible.
 
 ## Product boundary
 
 Agent Workbench does not run an autonomous agent for you and does not require hosted task infrastructure. It creates the local operating layer around agent work so humans and other agents can inspect, resume, review, and improve it.
 
-- [GitHub repository](https://github.com/soworks-jp/agent-workbench)
-- [Pilot playbook](https://github.com/soworks-jp/agent-workbench/blob/main/PILOT.md)
+- [All planned OSS releases](/oss/)
+- [Public pilot / release waitlist](https://github.com/soworks-jp/soworks-jp.github.io/issues/3)
 - [Japanese guide](/ja/agent-workbench/)
 - [Compare SO Works tools](/compare/)
