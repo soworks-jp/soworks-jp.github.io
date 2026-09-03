@@ -1,56 +1,48 @@
 ---
 layout: page
 title: Agent Token Optimizer — AI agent向けrepo context監査
-description: repository context、巨大ファイル、生成物、token riskをローカルに監査し、AI coding agentへ渡す前の無駄を減らすOSS。
+description: repository context、巨大ファイル、生成物、token riskをローカル監査する公開予定OSSのproduct preview。
 lang: ja
 permalink: /ja/agent-token-optimizer/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Token Optimizer · Pilot now · Public OSS release planned</span>
+  <span class="sw-kicker">Agent Token Optimizer · Planned OSS release</span>
   <h1>AI coding agentが読む前に、repo contextの無駄を監査する。</h1>
-  <p>Agent Token Optimizerは、repo全体をローカルにscanして、巨大ファイル、generated output、依存物、context budget、model routing hintを確認します。sourceをuploadせず、read-only auditから始められます。</p>
+  <p>Agent Token Optimizerは、repo全体をローカルにscanして、巨大ファイル、generated output、context budget、instruction肥大、indexing risk、model routing hintを確認するOSSとして公開準備中です。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Repo audit pilot / release waitlist</a>
-    <a class="sw-button secondary" href="/examples/agent-token-optimizer/agent-token-report.html">Reportを見る</a>
-    <a class="sw-button secondary" href="/ja/oss/#agent-token-optimizer">Release status</a>
+    <a class="sw-button" href="/examples/agent-token-optimizer/agent-token-report.html">Report previewを見る</a>
+    <a class="sw-button secondary" href="/ja/oss/#agent-token-optimizer">Release roadmap</a>
   </div>
 </section>
 
-## 何が分かるか
-
 <div class="sw-metric-grid">
-  <div class="sw-metric-card"><strong>Context waste</strong><span>agentが毎回読む必要のないgenerated / dependency / oversized context候補を把握する。</span></div>
-  <div class="sw-metric-card"><strong>Budget signal</strong><span>taskごとのrepo shortlistとcontext budgetを作り、下流のtoken余白を残す。</span></div>
-  <div class="sw-metric-card"><strong>Routing hint</strong><span>軽い作業と高context・高riskな作業を分ける判断材料にする。</span></div>
+  <div class="sw-metric-card"><strong>Read-only first</strong><span>変更より先にrepo contextを確認するproduct direction。</span></div>
+  <div class="sw-metric-card"><strong>Local analysis</strong><span>core auditはsource uploadを前提にしない設計。</span></div>
+  <div class="sw-metric-card"><strong>Before / After</strong><span>安全な少数変更でdefault contextが本当に改善したか比較する。</span></div>
 </div>
 
-## Pilotはbefore / afterで測る
+## 何が分かるか
 
-1. baseline scanを取る。
-2. 安全だと判断できるrecommendationだけ1〜3件適用する。
-3. 同じ条件で再scanする。
-4. context/readiness delta、false positive、2repo目やCIでも使いたいかを記録する。
-
-<div class="sw-callout"><strong>重要:</strong> 最大token削減を目的にしません。安全に繰り返せるrecommendationと、誤検知の少なさを優先します。</div>
+<div class="sw-choice-grid">
+  <div class="sw-choice-card"><h3>Context waste</h3><p>agentが毎回読む必要のないgenerated / dependency / oversized context候補。</p></div>
+  <div class="sw-choice-card"><h3>Instruction bloat</h3><p>agent instructionの肥大と、小さなpurpose-specific contextへ分割できる箇所。</p></div>
+  <div class="sw-choice-card"><h3>Editor / indexing risk</h3><p>generated directory、watcher/search exclusion、大きすぎるfileなどの候補。</p></div>
+  <div class="sw-choice-card"><h3>Budget / routing</h3><p>repo context budgetとtask typeごとのmodel tier判断材料。</p></div>
+</div>
 
 ## Preview
 
-<div class="sw-demo-grid">
-  <a class="sw-demo-card" href="/examples/agent-token-optimizer/agent-token-report.html"><img src="/examples/agent-token-optimizer/report-preview.png" alt="Agent Token Optimizer report preview"><div><strong>Repository report</strong><span>context構成、risk、改善候補を共有可能な形で確認する。</span></div></a>
-  <a class="sw-demo-card" href="/examples/agent-token-optimizer/agent-token-compare.html"><img src="/examples/agent-token-optimizer/report-preview.png" alt="Agent Token Optimizer compare preview"><div><strong>Before / after</strong><span>安全な変更の前後でcontext状態を比較する。</span></div></a>
-</div>
+[![Agent Token Optimizer report preview](/examples/agent-token-optimizer/report-preview.png)](/examples/agent-token-optimizer/agent-token-report.html)
+
+- [Example report](/examples/agent-token-optimizer/agent-token-report.html)
+- [Dashboard example](/examples/agent-token-optimizer/agent-token-dashboard.html)
+- [Before/after example](/examples/agent-token-optimizer/agent-token-compare.html)
 
 ## Public release status
 
-実装とbounded audit pilotは存在していますが、product repoはpublic packaging・docs・release gateを仕上げる間はprivateです。実際にpublic access可能になるまでrepo linkを先に公開しません。
+Agent Token Optimizerはpublic OSSとしてリリース予定です。repoはpublic packaging・docs・license確認・release gateを仕上げる間はprivateで、実際に公開可能になった時点でrepo / install linkを追加します。
 
-<div class="sw-panel sw-pilot-panel">
-  <span class="sw-kicker inverse">Repository audit pilot</span>
-  <h2>baselineを取り、改善の前後を測る。</h2>
-  <p>どのrecommendationが繰り返し有効か、何が誤検知になるか、2repo目やCIでも使いたくなるかを確認します。</p>
-  <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Public pilot / waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/">全OSS roadmap</a>
-  </div>
-</div>
+- [全OSS release roadmap](/ja/oss/)
+- [English page](/agent-token-optimizer/)
+- [使い分けを見る](/ja/compare/)
