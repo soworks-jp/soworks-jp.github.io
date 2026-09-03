@@ -1,39 +1,36 @@
-# SO Works OSS Guide
+# SO Works Agent Series site
 
-This is the unified GitHub Pages guide for SO Works OSS tools.
+Public product and pilot site for SO Works local-first OSS tools.
 
-## What This Site Covers
-
-The guide gives AI-agent developers and OSS maintainers one public entrypoint for SO Works tools:
-
-- `agent-workbench`
-- `agent-skill-shelf`
-- `agent-token-optimizer`
-- `fusion-skill`
-
-Published URL:
+Published URLs:
 
 - English: https://soworks.app/
 - Japanese: https://soworks.app/ja/
 - GitHub Pages fallback: https://soworks-jp.github.io/
 
-Each OSS has both English and Japanese product pages:
+## Site role
 
-- Agent Workbench: `/agent-workbench/` and `/ja/agent-workbench/`
-- Agent Skill Shelf: `/agent-skill-shelf/` and `/ja/agent-skill-shelf/`
-- Agent Token Optimizer: `/agent-token-optimizer/` and `/ja/agent-token-optimizer/`
-- Fusion Skill: `/fusion-skill/` and `/ja/fusion-skill/`
+This site is not only a documentation index. It should help a developer understand the Agent Series, choose the smallest tool for a current bottleneck, see a concrete output, try a bounded first-value workflow, and join a structured pilot.
 
-The GitHub organization is `soworks-jp`.
+Core growth surfaces:
 
-## Purpose
+- `/agent-workbench/` — multi-agent task coordination and 7-day design-partner pilot
+- `/agent-token-optimizer/` — local repository context audit and before/after pilot
+- `/agent-persona/` — persona-guided review and 30-minute before/after challenge
+- `/agent-human-memory/` — invite-only safe memory research pilot
+- `/compare/` — decision-oriented product comparison
+- `/pilot/` — active pilot chooser and privacy boundaries
+- `/ja/` — Japanese entrypoint
+- `/ja/pilot/` — Japanese pilot chooser
 
-Help developers choose the right SO Works OSS tool, then move into the package README, Japanese guide, or private-first release flow without guessing which project is current.
+Other OSS guides such as Agent Skill Shelf and Fusion Skill remain available as composable building blocks.
 
-## Local Preview
+## Growth rule
 
-Preview the site with any GitHub Pages compatible static server before publishing. Keep public pages free of local paths, private repository names, and internal release notes.
+Do not optimize the site for raw project count or generic beta sign-ups. The primary conversion is a completed first-value experiment: a Workbench task loop, repository audit, persona review comparison, or controlled memory research pilot.
 
-## Publishing
+## Local / CI validation
 
-Publishing the guide requires GitHub Pages configuration for `soworks.app`, current package links, and a final public-content review.
+The repository uses GitHub Pages/Jekyll. `.github/workflows/site-check.yml` builds the site on pull requests and validates the primary growth pages and generated stylesheet before changes reach `main`.
+
+Keep public pages free of private repository names, local paths, secrets, customer data, raw prompts/logs, and sensitive memory content.
