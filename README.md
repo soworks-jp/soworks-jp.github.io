@@ -1,6 +1,6 @@
 # SO Works Agent Series site
 
-Public product, release-roadmap, and pilot site for SO Works local-first OSS tools.
+Public product and release-roadmap site for SO Works local-first OSS tools.
 
 Published URLs:
 
@@ -10,42 +10,42 @@ Published URLs:
 
 ## Site role
 
-This site is not only a documentation index. It should help a developer understand the Agent Series, choose the smallest tool for a current bottleneck, see a concrete output, understand what is available versus still being prepared, try a bounded first-value workflow, and join a public pilot or release waitlist.
+This site explains the complete SO Works Agent Series before every repository is public. It should help a developer understand the architecture, choose the project that maps to a current bottleneck, preview representative product surfaces, and see which OSS releases are planned without implying that private repositories or unpublished packages are already available.
 
-Core growth surfaces:
+Core public surfaces:
 
-- `/oss/` / `/ja/oss/` — complete 13-project planned public OSS release roadmap
-- `/agent-workbench/` — multi-agent task coordination and 7-day design-partner pilot
-- `/agent-token-optimizer/` — local repository context audit and before/after pilot
-- `/agent-persona/` — persona-guided review and 30-minute before/after challenge
-- `/agent-human-memory/` — invite-only controlled memory research pilot
-- `/compare/` — decision-oriented product comparison
-- `/pilot/` — active pilot chooser and privacy boundaries
-- public signup / release waitlist — `soworks-jp.github.io#3`
+- `/oss/` / `/ja/oss/` — complete 13-project planned OSS release roadmap
+- `/agent-workbench/` — multi-agent coordination product preview
+- `/agent-token-optimizer/` — repository context-audit product preview
+- `/agent-persona/` — persona-guided review product preview
+- `/agent-human-memory/` — controlled memory research preview
+- `/compare/` — decision-oriented comparison across all 13 planned projects
 
-Agent Skill Shelf and Agent Fusion Skill have existing preview pages. AI Product Manager, Agent Task Router, Agent Handoff Kit, Agent Reporting, Agent Machine Doctor, Agent Security Doctor, and Agent Channel Bridge appear in the complete roadmap before their dedicated public landing pages are finished.
-
-Agent Desk is intentionally separate because its current repository is proprietary. Do not count it as OSS unless its licensing status actually changes.
+Agent Skill Shelf and Agent Fusion Skill also have preview pages. AI Product Manager, Agent Task Router, Agent Handoff Kit, Agent Reporting, Agent Machine Doctor, Agent Security Doctor, and Agent Channel Bridge appear in the complete roadmap before dedicated public landing pages are finished.
 
 ## Release-status rule
 
-All 13 catalog projects are planned for a public OSS release, but the site must not imply they are already publicly available.
+All 13 catalog projects are planned for public OSS release, but the site must not imply they are already publicly available.
 
-Use explicit readiness stages:
+Until a project is genuinely public:
 
-- **Pilot now / Research pilot** — bounded external experiments are actively useful now.
-- **Preview** — implementation exists; public packaging, docs, or release gates are still being finalized.
-- **Planned** — product contract exists and a public OSS release is intended, without a promised launch date.
+- show **Planned OSS release**,
+- do not expose private repository URLs,
+- do not publish installation commands that depend on unpublished packages,
+- do not advertise private pilot, research, waitlist, or pre-release coordination,
+- use synthetic/sanitized previews only.
 
-Private repository URLs must not be presented as public CTAs. Until a repository is publicly accessible, direct visitors to the public site waitlist issue instead.
+When a repository/package becomes public, update `_data/oss_catalog.yml` and the relevant product page in the same PR.
 
-`_data/oss_catalog.yml` is the source of truth for the public catalog. Update it when a project changes phase or becomes publicly available rather than editing multiple duplicated lists.
+## Private pre-release boundary
+
+Evaluation, research, design-partner work, and pre-release coordination may continue internally, but they are intentionally not a public-site acquisition surface while most repositories remain private. Public recruitment should be introduced only when the relevant project is ready to receive external users without exposing private infrastructure or creating dead-end links.
 
 ## Language architecture
 
-English and Japanese are explicit first-class surfaces rather than an automatic browser redirect. `_data/translations.yml` maps equivalent pages, the header exposes an EN / 日本語 switch, and the head emits `hreflang` alternates for search engines. This keeps URLs stable, lets users choose their language, and avoids surprising redirects from shared links.
+English and Japanese are explicit first-class surfaces rather than an automatic browser redirect. `_data/translations.yml` maps equivalent pages, the header exposes an EN / 日本語 switch, and the head emits `hreflang` alternates for search engines.
 
-Major Agent Series product, comparison, pilot, roadmap, and home pages should have an English/Japanese pair before they are added to the translation map.
+Major Agent Series product, comparison, roadmap, and home pages should have an English/Japanese pair before they are added to the translation map.
 
 ## Motion / interaction boundary
 
@@ -54,18 +54,18 @@ The technical visual layer is progressive enhancement:
 - `assets/motion.scss` provides ambient grid motion, agent-pipeline pulses, card/button feedback, and language-switch styling.
 - `assets/roadmap.scss` provides the complete release-roadmap cards and status surfaces.
 - `assets/interactions.js` adds scroll reveal, pointer-responsive hero glow, and the decorative agent pipeline.
-- Core copy, links, pilot CTAs, and language switching must still work without JavaScript.
+- Core copy, links, and language switching must still work without JavaScript.
 - `prefers-reduced-motion` disables nonessential motion.
-- Avoid heavy WebGL, scroll hijacking, or animation that competes with reading and first-value conversion.
+- Avoid heavy WebGL, scroll hijacking, or animation that competes with reading.
 
 Micro-interactions should explain the product model—routing, context flow, review, memory—not act as decoration alone.
 
 ## Growth rule
 
-Do not optimize the site for raw project count or generic beta sign-ups. Showing the complete roadmap is useful for portfolio comprehension, but the primary conversion remains a completed first-value experiment or a high-intent release-waitlist opt-in.
+For now, optimize the public site for **portfolio comprehension and release credibility**, not sign-ups. Showing all 13 planned releases is useful because it communicates the architecture. Proof, case studies, and public acquisition flows should be added later from releases that are actually open to external users.
 
 ## Local / CI validation
 
-The repository uses GitHub Pages/Jekyll. `.github/workflows/site-check.yml` builds the site on pull requests, syntax-checks the interaction script, validates English/Japanese growth and roadmap pages, verifies language metadata/switching, confirms generated growth/motion/roadmap assets, checks that all 13 planned releases render, and blocks known private pilot-Issue URLs from returning to public CTAs.
+The repository uses GitHub Pages/Jekyll. `.github/workflows/site-check.yml` builds the site on pull requests, syntax-checks the interaction script, validates English/Japanese growth and roadmap pages, verifies language metadata/switching, confirms generated growth/motion/roadmap assets, checks that all 13 planned releases render, and fails if known recruitment/private-repository patterns return to public pages.
 
-Keep public pages free of private repository identifiers, local paths, secrets, customer data, raw prompts/logs, and other non-public operational content.
+Keep public pages free of private repository URLs, local paths, secrets, customer data, raw prompts/logs, sensitive memory content, and other non-public operational details.
