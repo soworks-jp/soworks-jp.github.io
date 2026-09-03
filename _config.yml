@@ -1,5 +1,5 @@
-title: SO Works OSS Guide
-description: Local-first OSS tools for AI agents, skills, reviews, and developer workflows
+title: SO Works Agent Series
+description: Local-first open-source tools for coding-agent coordination, repository context optimization, persona-guided review, and safe agent-memory research.
 theme: minima
 lang: en
 url: "https://soworks.app"
@@ -8,6 +8,6 @@ github_username: soworks-jp
 
 header_pages:
   - agent-workbench.md
-  - agent-skill-shelf.md
   - agent-token-optimizer.md
-  - fusion-skill.md
+  - compare.md
+  - pilot.md
