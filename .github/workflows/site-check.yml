@@ -1,0 +1,34 @@
+name: Site Check
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      - uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Validate growth landing surfaces
+        run: |
+          test -f _site/index.html
+          test -f _site/agent-workbench/index.html
+          test -f _site/agent-token-optimizer/index.html
+          test -f _site/agent-persona/index.html
+          test -f _site/agent-human-memory/index.html
+          test -f _site/compare/index.html
+          test -f _site/pilot/index.html
+          test -f _site/assets/growth.css
+          grep -q "Run coding agents like a real engineering team" _site/index.html
+          grep -q "Join the 7-day design-partner pilot" _site/agent-workbench/index.html
+          grep -q "Audit what your coding agent has to read" _site/agent-token-optimizer/index.html
+          grep -q "One concrete experiment" _site/pilot/index.html
