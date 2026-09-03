@@ -1,0 +1,107 @@
+- id: agent-workbench
+  name: Agent Workbench
+  layer: Operate
+  phase: Pilot now
+  status: Planned public OSS release
+  summary_en: Coordinate real coding-agent work with task memory, routing, claims, handoffs, review, and local control.
+  summary_ja: タスク記憶、ルーティング、claim、handoff、review、Local Controlで複数coding agentの実作業を運用する基盤。
+  page: /agent-workbench/
+  page_ja: /ja/agent-workbench/
+  pilot: true
+- id: agent-token-optimizer
+  name: Agent Token Optimizer
+  layer: Optimize
+  phase: Pilot now
+  status: Planned public OSS release
+  summary_en: Audit repository context waste and reduce what coding agents need to read before execution.
+  summary_ja: coding agentが読むrepo contextの無駄を診断し、実行前のtoken負荷と不要contextを減らす。
+  page: /agent-token-optimizer/
+  page_ja: /ja/agent-token-optimizer/
+  pilot: true
+- id: agent-persona
+  name: Agent Persona
+  layer: Review
+  phase: Pilot now
+  status: Planned public OSS release
+  summary_en: Add reusable user, adopter, security, operator, buyer, and contributor perspectives to AI review.
+  summary_ja: user、adopter、security、operator、buyer、contributorなどの視点を再利用可能なAI reviewへ追加する。
+  page: /agent-persona/
+  page_ja: /ja/agent-persona/
+  pilot: true
+- id: agent-human-memory
+  name: Agent Human Memory
+  layer: Remember
+  phase: Research pilot
+  status: Planned public OSS release
+  summary_en: Explore explicit, reviewable, forgettable agent memory with provenance, consent, authority, and retention boundaries.
+  summary_ja: provenance、consent、authority、retention、forgettingを明示した、確認・修正可能なagent memoryを研究する。
+  page: /agent-human-memory/
+  page_ja: /ja/agent-human-memory/
+  pilot: true
+- id: agent-skill-shelf
+  name: Agent Skill Shelf
+  layer: Skills
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Keep one canonical skill source and generate reviewed outputs for Claude Code, Codex, Gemini, Copilot, Continue, and more.
+  summary_ja: 1つのcanonical skillからClaude Code、Codex、Gemini、Copilot、Continueなど向けの出力を安全に生成・管理する。
+  page: /agent-skill-shelf/
+  page_ja: /ja/agent-skill-shelf/
+- id: agent-fusion-skill
+  name: Agent Fusion Skill
+  layer: Review
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Run multi-perspective review, independent lanes, judge synthesis, and improvement before an agent finalizes work.
+  summary_ja: 複数視点の独立review、judge synthesis、改善をfinalize前に実行するagent skill。
+  page: /fusion-skill/
+  page_ja: /ja/fusion-skill/
+- id: ai-product-manager
+  name: AI Product Manager
+  layer: Plan
+  phase: Planned
+  status: Planned public OSS release
+  summary_en: Turn rough ideas into briefs, PRDs, prioritized tasks, acceptance criteria, review plans, and release readiness reports.
+  summary_ja: 粗いアイデアからbrief、PRD、優先タスク、acceptance criteria、review plan、release readinessを生成する。
+- id: agent-task-router
+  name: Agent Task Router
+  layer: Route
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Deterministically route tasks to agents, model tiers, skills, or human review gates before execution.
+  summary_ja: 実行前にtaskをagent、model tier、skill、human review gateへ決定論的に振り分ける。
+- id: agent-handoff-kit
+  name: Agent Handoff Kit
+  layer: Handoff
+  phase: Planned
+  status: Planned public OSS release
+  summary_en: Convert structured tasks, route decisions, and context packs into agent-ready Markdown and JSON handoff packets.
+  summary_ja: task、route decision、context packをagentが実行しやすいMarkdown/JSON handoff packetへ変換する。
+- id: agent-reporting
+  name: Agent Reporting
+  layer: Learn
+  phase: Planned
+  status: Planned public OSS release
+  summary_en: Turn agent activity, runs, reviews, failures, and feedback into reports, risks, learning, and next actions.
+  summary_ja: agent activity、run、review、failure、feedbackをreport、risk、learning、next actionへ変換する。
+- id: agent-machine-doctor
+  name: Agent Machine Doctor
+  layer: Doctor
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Diagnose developer-machine performance, storage, caches, background load, memory pressure, and toolchain readiness.
+  summary_ja: developer machineのperformance、storage、cache、background load、memory pressure、toolchain readinessを診断する。
+- id: agent-security-doctor
+  name: Agent Security Doctor
+  layer: Doctor
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Diagnose repository, supply-chain, editor, data-boundary, agent-config, attack-surface, and release-gate security risks.
+  summary_ja: repo、supply chain、editor、data boundary、agent config、attack surface、release gateのsecurity riskを診断する。
+- id: agent-channel-bridge
+  name: Agent Channel Bridge
+  layer: Connect
+  phase: Preview
+  status: Planned public OSS release
+  summary_en: Bridge local agent status, approvals, replies, and results to Slack, Discord, and custom human-in-the-loop channels.
+  summary_ja: local agentのstatus、approval、reply、resultをSlack、Discord、custom channelへ安全に橋渡しする。

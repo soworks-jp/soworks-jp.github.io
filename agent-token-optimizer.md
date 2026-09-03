@@ -7,13 +7,13 @@ permalink: /agent-token-optimizer/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Token Optimizer · Fastest start</span>
+  <span class="sw-kicker">Agent Token Optimizer · Pilot now · Public OSS release planned</span>
   <h1>Audit what your coding agent has to read.</h1>
   <p>Agent Token Optimizer scans a repository locally for context waste, oversized files, generated content, instruction bloat, editor-indexing risk, token budgets, and model-routing opportunities. Source code is not uploaded by the tool.</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/agent-token-optimizer">View on GitHub</a>
-    <a class="sw-button secondary" href="https://github.com/soworks-jp/agent-token-optimizer/issues/6">Pilot a free repo audit</a>
+    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Pilot a repo / join release waitlist</a>
     <a class="sw-button secondary" href="/examples/agent-token-optimizer/agent-token-report.html">Open example report</a>
+    <a class="sw-button secondary" href="/oss/#agent-token-optimizer">Release status</a>
   </div>
 </section>
 
@@ -65,13 +65,17 @@ The easiest way to evaluate Token Optimizer is a bounded before/after experiment
 
 <div class="sw-callout"><strong>Best pilot targets:</strong> medium/large repositories, monorepos, projects with generated directories, long agent instructions, or teams already using Codex, Claude Code, Cursor, Copilot, Gemini CLI, Aider, or similar coding agents.</div>
 
-[Volunteer a repository for the audit pilot →](https://github.com/soworks-jp/agent-token-optimizer/issues/6)
+[Volunteer through the public repo-audit pilot / release waitlist →](https://github.com/soworks-jp/soworks-jp.github.io/issues/3)
+
+## Public release status
+
+Agent Token Optimizer is being prepared for a public OSS release. The implementation and bounded audit pilot exist today, but the product repository remains private while public packaging, documentation, and release gates are finalized. The repository link will be published only when it is actually accessible.
 
 ## Product boundary
 
 The project analyzes repository-side context and emits recommendations. It does not promise that every reduction is safe, and it does not automatically delete files. Review recommendations against the actual task and repository before applying them.
 
-- [GitHub repository](https://github.com/soworks-jp/agent-token-optimizer)
-- [Pilot playbook](https://github.com/soworks-jp/agent-token-optimizer/blob/main/PILOT.md)
+- [All planned OSS releases](/oss/)
+- [Public pilot / release waitlist](https://github.com/soworks-jp/soworks-jp.github.io/issues/3)
 - [Japanese guide](/ja/agent-token-optimizer/)
 - [Compare SO Works tools](/compare/)

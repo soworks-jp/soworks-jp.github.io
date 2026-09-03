@@ -20,7 +20,7 @@ jobs:
         with:
           source: ./
           destination: ./_site
-      - name: Validate growth, motion, and language surfaces
+      - name: Validate growth, roadmap, motion, and language surfaces
         run: |
           test -f _site/index.html
           test -f _site/ja/index.html
@@ -36,16 +36,29 @@ jobs:
           test -f _site/ja/compare/index.html
           test -f _site/pilot/index.html
           test -f _site/ja/pilot/index.html
+          test -f _site/oss/index.html
+          test -f _site/ja/oss/index.html
           test -f _site/assets/growth.css
           test -f _site/assets/motion.css
+          test -f _site/assets/roadmap.css
           test -f _site/assets/interactions.js
           grep -q "Run coding agents like a real engineering team" _site/index.html
-          grep -q "Join the 7-day design-partner pilot" _site/agent-workbench/index.html
+          grep -q "13 public OSS releases planned" _site/index.html
+          grep -q "13 OSS releases. One composable agent stack" _site/oss/index.html
+          grep -q "13のOSSを、1つのAgent Stackとして公開予定" _site/ja/oss/index.html
+          grep -q "Agent Channel Bridge" _site/oss/index.html
+          grep -q "Agent Security Doctor" _site/oss/index.html
+          grep -q "AI Product Manager" _site/oss/index.html
+          grep -q "Agent Desk is tracked separately" _site/oss/index.html
           grep -q "Audit what your coding agent has to read" _site/agent-token-optimizer/index.html
           grep -q "One concrete experiment" _site/pilot/index.html
-          grep -q "sw-language-switch" _site/index.html
-          grep -q 'hreflang="ja"' _site/index.html
-          grep -q 'hreflang="en"' _site/ja/index.html
+          grep -q "soworks-jp.github.io/issues/3" _site/pilot/index.html
+          grep -q "soworks-jp.github.io/issues/3" _site/ja/pilot/index.html
+          grep -q "sw-language-switch" _site/oss/index.html
+          grep -q 'hreflang="ja"' _site/oss/index.html
+          grep -q 'hreflang="en"' _site/ja/oss/index.html
           grep -q "assets/interactions.js" _site/index.html
           grep -q "その成果物を実際に使う人の視点でレビューする" _site/ja/agent-persona/index.html
           grep -q "Memoryをブラックボックスにせず" _site/ja/agent-human-memory/index.html
+          test "$(grep -o "Planned public OSS release" _site/oss/index.html | wc -l | tr -d ' ')" -ge 13
+          ! grep -R -E "agent-workbench/issues/106|agent-token-optimizer/issues/6|agent-persona/issues/5|agent-human-memory/issues/8" _site/index.html _site/ja/index.html _site/pilot/index.html _site/ja/pilot/index.html _site/agent-workbench/index.html _site/agent-token-optimizer/index.html _site/agent-persona/index.html _site/agent-human-memory/index.html _site/ja/agent-workbench/index.html _site/ja/agent-token-optimizer/index.html _site/ja/agent-persona/index.html _site/ja/agent-human-memory/index.html

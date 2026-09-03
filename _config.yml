@@ -9,5 +9,6 @@ github_username: soworks-jp
 header_pages:
   - agent-workbench.md
   - agent-token-optimizer.md
+  - oss.md
   - compare.md
   - pilot.md

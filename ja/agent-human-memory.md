@@ -1,18 +1,18 @@
 ---
 layout: page
-title: Agent Human Memory — 安全なagent memory研究
-description: provenance、consent、review、authority、retention、forgettingを明示したlocal-firstなagent memory実験基盤。
+title: Agent Human Memory — 明示的なagent memory研究
+description: provenance、review、authority、retention、forgettingを明示したlocal-firstなagent memory実験基盤。
 lang: ja
 permalink: /ja/agent-human-memory/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Human Memory · Experimental research</span>
+  <span class="sw-kicker">Agent Human Memory · Research pilot · Public OSS release planned</span>
   <h1>Memoryをブラックボックスにせず、agentの継続性を研究する。</h1>
-  <p>Agent Human Memoryは、明示的なpreferences、goals、episodes、relationship context、persona signalsなどを扱いながら、provenance、authority、review、retention、consent、forgettingの境界を見える状態に保つ実験的なOSSです。</p>
+  <p>Agent Human Memoryは、明示的なpreference、goal、episode、working contextなどを扱いながら、provenance、authority、review、retention、forgettingの境界を見える状態に保つ実験的なOSSです。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/agent-human-memory">GitHubで見る</a>
-    <a class="sw-button secondary" href="https://github.com/soworks-jp/agent-human-memory/issues/8">Research pilotに参加</a>
+    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Research pilot / release waitlist</a>
+    <a class="sw-button secondary" href="/ja/oss/#agent-human-memory">Release status</a>
   </div>
 </section>
 
@@ -27,31 +27,26 @@ permalink: /ja/agent-human-memory/
 ## 向いている人
 
 - agent framework / memory infrastructure開発者
-- local-first personal agentを研究している開発者
-- provenanceやauthority boundaryを評価したいresearcher
+- local-first agentを研究している開発者
+- provenanceやauthority boundaryを評価したい人
 - memory consolidationやrecurrence処理を安全側から検証したい人
 
 ## Pilotの境界
 
-これはconsumer向けmemory betaではありません。最初の研究pilotでは**syntheticまたは低機密データのみ**を使います。
-
-- medical / financial / intimate informationを使わない
-- authentication dataやsecretを保存しない
-- real private relationship historyを公開Issueへ載せない
-- authority・privacy・provenanceの高リスク失敗を、recall不足より重大な失敗として扱う
+最初の研究pilotではsyntheticまたは意図的に低機密なexampleだけを使い、continuity、review、forgetting、recurrence、provenance、authority boundaryを確認します。
 
 <div class="sw-callout"><strong>Safety first:</strong> より多く思い出すことより、間違った権限・用途・provenanceで記憶を使わないことを優先します。</div>
 
-## 7日research pilot
+## Public release status
 
-5〜10件のsynthetic/low-sensitivity memoryを複数sessionで使い、continuity、review、forgetting、recurrence/consolidation proposal、provenance、authority boundaryを確認します。
+実験実装とresearch protocolは存在していますが、product repoはpublic packaging・docs・release gateを仕上げる間はprivateです。実際にpublic access可能になるまでrepo linkを先に公開しません。
 
 <div class="sw-panel sw-pilot-panel">
   <span class="sw-kicker inverse">Invite-only research</span>
   <h2>広く集める前に、安全性を壊しにいく。</h2>
-  <p>最初は5人程度のbuilder/researcher cohortを想定しています。高リスクなprivacy/authority failureが残る間は一般betaへ広げません。</p>
+  <p>最初は小規模なbuilder/evaluator cohortで検証し、authorityやprovenanceの高リスクfailureが残る間は一般betaへ広げません。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/agent-human-memory/issues/8">Research pilot募集</a>
-    <a class="sw-button secondary" href="/ja/pilot/">全pilotを見る</a>
+    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Public research pilot / waitlist</a>
+    <a class="sw-button secondary" href="/ja/oss/">全OSS roadmap</a>
   </div>
 </div>
