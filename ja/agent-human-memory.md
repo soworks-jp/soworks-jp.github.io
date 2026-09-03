@@ -1,52 +1,46 @@
 ---
 layout: page
 title: Agent Human Memory — 明示的なagent memory研究
-description: provenance、review、authority、retention、forgettingを明示したlocal-firstなagent memory実験基盤。
+description: provenance、review、authority、retention、forgettingを明示する公開予定のexperimental OSS preview。
 lang: ja
 permalink: /ja/agent-human-memory/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Human Memory · Research pilot · Public OSS release planned</span>
+  <span class="sw-kicker">Agent Human Memory · Planned OSS release</span>
   <h1>Memoryをブラックボックスにせず、agentの継続性を研究する。</h1>
-  <p>Agent Human Memoryは、明示的なpreference、goal、episode、working contextなどを扱いながら、provenance、authority、review、retention、forgettingの境界を見える状態に保つ実験的なOSSです。</p>
+  <p>Agent Human Memoryは、明示的なpreference、goal、episode、working contextを扱いながら、provenance、authority、review、retention、forgettingの境界を見える状態に保つexperimental OSSとして公開準備中です。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Research pilot / release waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/#agent-human-memory">Release status</a>
+    <a class="sw-button" href="/ja/oss/#agent-human-memory">Release roadmap</a>
+    <a class="sw-button secondary" href="/ja/compare/">使い分けを見る</a>
   </div>
 </section>
 
-## 研究したいこと
-
 <div class="sw-metric-grid">
-  <div class="sw-metric-card"><strong>Continuity</strong><span>前のsessionで明示的に保存した情報を、必要な場面で安全に再利用できるか。</span></div>
-  <div class="sw-metric-card"><strong>Authority</strong><span>単なるcontextをstanding instructionへ勝手に昇格させないか。</span></div>
-  <div class="sw-metric-card"><strong>Forgetting</strong><span>保持だけでなく、review・retention・forgettingをユーザーが理解して操作できるか。</span></div>
+  <div class="sw-metric-card"><strong>Explicit records</strong><span>hidden model stateではなく、確認可能なrecordとしてmemoryを扱う。</span></div>
+  <div class="sw-metric-card"><strong>Forgettable</strong><span>保持だけでなくreview、retention、forgettingをlifecycleに含める。</span></div>
+  <div class="sw-metric-card"><strong>Safety first</strong><span>recall量よりauthority、provenance、consent、false mergeを重視する。</span></div>
 </div>
 
-## 向いている人
+## 研究したいこと
 
-- agent framework / memory infrastructure開発者
-- local-first agentを研究している開発者
-- provenanceやauthority boundaryを評価したい人
-- memory consolidationやrecurrence処理を安全側から検証したい人
+<div class="sw-choice-grid">
+  <div class="sw-choice-card"><h3>Continuity</h3><p>明示的なmemoryがsessionをまたぐ繰り返し説明をどこまで減らせるか。</p></div>
+  <div class="sw-choice-card"><h3>Authority</h3><p>context、preference、delegated instructionの違いを勝手に昇格させず保持できるか。</p></div>
+  <div class="sw-choice-card"><h3>Forgetting</h3><p>review・retention・forgetをユーザーが理解して操作できるか。</p></div>
+  <div class="sw-choice-card"><h3>Consolidation safety</h3><p>recurrenceやconsolidationがfalse mergeやprovenance escalationを起こさないか。</p></div>
+</div>
 
-## Pilotの境界
-
-最初の研究pilotではsyntheticまたは意図的に低機密なexampleだけを使い、continuity、review、forgetting、recurrence、provenance、authority boundaryを確認します。
-
-<div class="sw-callout"><strong>Safety first:</strong> より多く思い出すことより、間違った権限・用途・provenanceで記憶を使わないことを優先します。</div>
+<div class="sw-callout"><strong>Safety boundary:</strong> より多く思い出すことより、間違ったauthority・provenance・用途でmemoryを使わないことを優先します。</div>
 
 ## Public release status
 
-実験実装とresearch protocolは存在していますが、product repoはpublic packaging・docs・release gateを仕上げる間はprivateです。実際にpublic access可能になるまでrepo linkを先に公開しません。
+Agent Human Memoryはpublic OSSとしてリリース予定です。experimental implementationはpublic packaging・docs・license確認・safety-oriented release gateを仕上げる間はprivateで、実際に公開可能になった時点でrepo / install linkを追加します。
 
-<div class="sw-panel sw-pilot-panel">
-  <span class="sw-kicker inverse">Invite-only research</span>
-  <h2>広く集める前に、安全性を壊しにいく。</h2>
-  <p>最初は小規模なbuilder/evaluator cohortで検証し、authorityやprovenanceの高リスクfailureが残る間は一般betaへ広げません。</p>
-  <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Public research pilot / waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/">全OSS roadmap</a>
-  </div>
-</div>
+## Product boundary
+
+identity simulationを目的にしたproductではありません。memoryをよりinspectable・controllableにするためのinfrastructure researchです。
+
+- [全OSS release roadmap](/ja/oss/)
+- [English page](/agent-human-memory/)
+- [使い分けを見る](/ja/compare/)
