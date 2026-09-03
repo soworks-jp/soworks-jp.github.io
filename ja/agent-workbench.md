@@ -1,62 +1,51 @@
 ---
 layout: page
 title: Agent Workbench — AI coding agentの作業基盤
-description: Codex、Claude Code、Cursor、Gemini CLIなど複数のcoding agentを、task memory、routing、claim、handoff、reviewでローカルに運用するOSS。
+description: 複数coding agentのtask memory、routing、claim、handoff、reviewをローカルに運用する公開予定OSSのproduct preview。
 lang: ja
 permalink: /ja/agent-workbench/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Workbench · Pilot now · Public OSS release planned</span>
+  <span class="sw-kicker">Agent Workbench · Planned OSS release</span>
   <h1>AI coding agentを、実際の開発チームのように運用する。</h1>
-  <p>Agent Workbenchは、実repo上のtask memory、routing、claim/lease、prompt、handoff、report、reviewをローカルにまとめます。Codex、Claude Code、Cursor、Gemini CLIなどを併用しても、別のhosted control planeを必須にしません。</p>
+  <p>Agent Workbenchは、実repo上のtask memory、routing、claim/lease、prompt、handoff、report、reviewをローカルにまとめるoperating layerとして公開準備中です。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">7日pilot / release waitlistに参加</a>
-    <a class="sw-button secondary" href="/examples/agent-workbench/agent-workbench-dashboard.html">Dashboardを見る</a>
-    <a class="sw-button secondary" href="/ja/oss/#agent-workbench">Release status</a>
+    <a class="sw-button" href="/examples/agent-workbench/agent-workbench-dashboard.html">Product previewを見る</a>
+    <a class="sw-button secondary" href="/ja/oss/#agent-workbench">Release roadmap</a>
   </div>
 </section>
 
-## 解決すること
-
 <div class="sw-metric-grid">
-  <div class="sw-metric-card"><strong>Task memory</strong><span>TODO、issue、roadmap、review needをagentへ渡せるtaskとして残す。</span></div>
-  <div class="sw-metric-card"><strong>Coordination</strong><span>routingとclaim/leaseで、複数agentの重複作業や衝突を減らす。</span></div>
+  <div class="sw-metric-card"><strong>Task memory</strong><span>TODO、issue、roadmap、review needをagentへ渡せるtaskとして残す設計。</span></div>
+  <div class="sw-metric-card"><strong>Coordination</strong><span>routingとclaim/leaseで複数agentの重複作業や衝突を減らす。</span></div>
   <div class="sw-metric-card"><strong>Evidence</strong><span>prompt、report、review、PR briefをtask loopに沿って残す。</span></div>
 </div>
 
-## まず試す
+## 解決したいこと
 
-```bash
-npx agent-workbench tour
-```
+複数のcoding agentを使うと、コード生成速度よりも「何をやるか」「誰が担当するか」「何を渡すか」「何をreviewするか」「次のagentが何を覚えるか」が運用コストになります。Agent Workbenchはこのcoordinationをrepo-local artifactとして扱う方向で設計しています。
 
-isolated tourでtask作成、duplicate preflight、route、claim、prompt、reviewまで試した後、実repoへ導入できます。
+## Planned product surface
 
-## 向いている人
-
-- Codex / Claude Code / Cursor / Gemini CLIなど複数agentを使う開発者
-- OSS maintainerやsolo developerで、毎回contextを説明し直したくない人
-- 小規模チームでagent taskのownershipとhandoffを見える化したい人
-- hosted SaaSへrepo operational contextを増やしたくない人
-
-## 実際のsurface
-
-<div class="sw-demo-grid">
-  <a class="sw-demo-card" href="/examples/agent-workbench/agent-workbench-dashboard.html"><img src="/examples/agent-workbench/view-preview.png" alt="Agent Workbench dashboard preview"><div><strong>Local Control</strong><span>task、status、routing、evidenceをローカルUIで確認する。</span></div></a>
-  <a class="sw-demo-card" href="/examples/agent-workbench/"><img src="/examples/agent-workbench/view-preview.png" alt="Agent Workbench example index preview"><div><strong>Examples</strong><span>private repo情報を使わないfixtureで、task loopの見え方を確認する。</span></div></a>
+<div class="sw-choice-grid">
+  <div class="sw-choice-card"><h3>Task memory</h3><p>acceptance criteria、decision、completion learning、review evidenceをsessionをまたいで残す。</p></div>
+  <div class="sw-choice-card"><h3>Safe parallel work</h3><p>routingとclaim leaseでownershipを明示してからagentを動かす。</p></div>
+  <div class="sw-choice-card"><h3>Handoff</h3><p>taskからtarget agent向けのpromptやhandoff packetを組み立てる。</p></div>
+  <div class="sw-choice-card"><h3>Local Control + Desktop</h3><p>repoをsource of truthにしながら、local UIでprojectやoperational stateを確認する。</p></div>
 </div>
+
+## Preview
+
+[![Agent Workbench dashboard preview](/examples/agent-workbench/view-preview.png)](/examples/agent-workbench/agent-workbench-dashboard.html)
+
+- [Dashboard example](/examples/agent-workbench/agent-workbench-dashboard.html)
+- [Examples](/examples/agent-workbench/)
 
 ## Public release status
 
-実装とpilotは存在していますが、product repoはpublic packaging・docs・release gateを仕上げる間はprivateです。実際にpublic access可能になるまでrepo linkを先に公開しません。
+Agent Workbenchはpublic OSSとしてリリース予定です。repoはpublic packaging・docs・license確認・release gateを仕上げる間はprivateで、実際に公開可能になった時点でrepo / install linkを追加します。
 
-<div class="sw-panel sw-pilot-panel">
-  <span class="sw-kicker inverse">Design partner pilot</span>
-  <h2>7日間、実タスクを3件だけ回してみる。</h2>
-  <p>first-valueの詰まり、繰り返しcontext説明が減るか、継続利用したいsurfaceは何かを測ります。</p>
-  <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Public pilot / waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/">全OSS roadmap</a>
-  </div>
-</div>
+- [全OSS release roadmap](/ja/oss/)
+- [English page](/agent-workbench/)
+- [使い分けを見る](/ja/compare/)

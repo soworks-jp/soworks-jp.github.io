@@ -1,55 +1,44 @@
 ---
 layout: page
 title: Agent Persona — ペルソナ視点でAIレビューを強くする
-description: ユーザー、導入者、セキュリティ、運用、購入者、コントリビューターの視点をAIレビューへ追加し、通常レビューとの差分価値を測るOSS。
+description: user、adopter、security、operator、buyer、contributorの視点をAI reviewへ追加する公開予定OSSのproduct preview。
 lang: ja
 permalink: /ja/agent-persona/
 ---
 
 <section class="sw-product-hero">
-  <span class="sw-kicker">Agent Persona · Pilot now · Public OSS release planned</span>
+  <span class="sw-kicker">Agent Persona · Planned OSS release</span>
   <h1>その成果物を実際に使う人の視点でレビューする。</h1>
-  <p>Agent Personaは、ユーザー、導入者、コントリビューター、セキュリティ、運用、購入者などの明示的な視点をportableなreview packとして扱い、README、PRD、オンボーディング、リリース、UX、agent handoffのレビューに再利用します。</p>
+  <p>Agent Personaは、user、adopter、contributor、security、operator、buyerなどの明示的な視点をportableなreview packとして扱い、README、PRD、onboarding、release、UX、agent handoffへ再利用するOSSとして公開準備中です。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">30分pilot / release waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/#agent-persona">Release status</a>
+    <a class="sw-button" href="/ja/oss/#agent-persona">Release roadmap</a>
+    <a class="sw-button secondary" href="/ja/compare/">使い分けを見る</a>
   </div>
 </section>
 
-## 何が変わるか
-
 <div class="sw-metric-grid">
-  <div class="sw-metric-card"><strong>Before / After</strong><span>通常のAIレビューを保存してから、同じ成果物にPersona reviewを実行する。</span></div>
-  <div class="sw-metric-card"><strong>Incremental signal</strong><span>本当に新しく見つかったactionable findingだけを数える。</span></div>
-  <div class="sw-metric-card"><strong>Review efficiency</strong><span>追加レビュー時間に対して、どれだけ有用な指摘が増えたかを見る。</span></div>
+  <div class="sw-metric-card"><strong>視点を明示</strong><span>genericなreview promptではなく、誰の立場で見るかをartifactとして持つ。</span></div>
+  <div class="sw-metric-card"><strong>比較可能</strong><span>同じsynthetic review groupをreleaseやartifactをまたいで再利用する。</span></div>
+  <div class="sw-metric-card"><strong>Signal重視</strong><span>comment数ではなく、本当に新しいactionable findingを価値として扱う。</span></div>
 </div>
 
-## 向いているケース
+## Planned product surface
 
-- OSS README / docsの導入者目線レビュー
-- PRDや仕様のユーザー・運用・購入者目線レビュー
-- onboardingやUXの複数視点レビュー
-- agent handoffやrelease artifactの確認
-
-## 30分で試す
-
-1. ひとつの公開またはsanitizedな成果物を通常どおりAIレビューする。
-2. 同じ成果物をAgent Personaの適切なreview groupでレビューする。
-3. 通常レビューでは出なかったactionable findingだけを数える。
-4. 重複・ノイズと追加レビュー時間も記録する。
-
-<div class="sw-callout"><strong>Growth指標:</strong> 指摘総数ではなく、追加レビュー1分あたりのincremental actionable findingsを重視します。</div>
+<div class="sw-choice-grid">
+  <div class="sw-choice-card"><h3>User / adopter lens</h3><p>初回利用者、導入者、buyer、operatorが何を誤解・拒否・不足と感じるかを見る。</p></div>
+  <div class="sw-choice-card"><h3>Security / contributor lens</h3><p>maintenance、contribution、operations、securityの懸念をrepeatable reviewへ入れる。</p></div>
+  <div class="sw-choice-card"><h3>Reusable review groups</h3><p>README、PRD、onboarding、UX、release、handoffへ同じ視点セットを適用する。</p></div>
+  <div class="sw-choice-card"><h3>Composable review</h3><p>Agent Fusionなどtechnical reviewer laneとは別軸でpersona guidanceを組み合わせる。</p></div>
+</div>
 
 ## Public release status
 
-実装とreview challengeは存在していますが、product repoはpublic packaging・examples・docs・release gateを仕上げる間はprivateです。実際にpublic access可能になるまでrepo linkを先に公開しません。
+Agent Personaはpublic OSSとしてリリース予定です。repoはpublic packaging・examples・docs・license確認・release gateを仕上げる間はprivateで、実際に公開可能になった時点でrepo / install linkを追加します。
 
-<div class="sw-panel sw-pilot-panel">
-  <span class="sw-kicker inverse">Pilot</span>
-  <h2>同じ成果物を2回レビューして、追加価値を測る。</h2>
-  <p>before/after challengeで、通常reviewから増えた本当に有用なsignalだけを確認します。</p>
-  <div class="sw-actions">
-    <a class="sw-button" href="https://github.com/soworks-jp/soworks-jp.github.io/issues/3">Public pilot / waitlist</a>
-    <a class="sw-button secondary" href="/ja/oss/">全OSS roadmap</a>
-  </div>
-</div>
+## Product boundary
+
+Persona packはreviewの視点を明示するためのものです。実在ユーザーを再現したり、interviewや直接のuser researchを置き換えるものではありません。
+
+- [全OSS release roadmap](/ja/oss/)
+- [English page](/agent-persona/)
+- [使い分けを見る](/ja/compare/)
