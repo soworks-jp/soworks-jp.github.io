@@ -7,40 +7,41 @@ permalink: /ja/compare/
 
 <section class="sw-product-hero">
   <span class="sw-kicker">ボトルネックから選ぶ</span>
-  <h1>全部入れず、今困っている1つから。</h1>
-  <p>SO WorksのOSSは小さく分けています。まずbefore/afterを測れる1つの実験から始め、同じ問題が繰り返すと分かったときだけ組み合わせます。</p>
-  <div class="sw-actions"><a class="sw-button" href="/ja/pilot/">pilotを見る</a><a class="sw-button secondary" href="/ja/oss/">13 OSSのrelease roadmap</a></div>
+  <h1>13 OSSの役割を、今の課題から理解する。</h1>
+  <p>Agent Seriesはcomposableなprojectへ分けています。このページでは、どの公開予定OSSがどの繰り返し課題を解く設計かを整理します。public repo/package linkは各releaseの準備完了後に追加します。</p>
+  <div class="sw-actions"><a class="sw-button" href="/ja/oss/">13 OSSのrelease roadmap</a></div>
 </section>
 
-| 主な悩み | 最初に使うOSS | 最短の検証 / 状態 |
+| 主な悩み | 公開予定OSS | Stackでの役割 |
 |---|---|---|
-| 複数coding agentが同じ作業をしたり、task contextを毎回作り直す | **[Agent Workbench](/ja/agent-workbench/)** | 7日で実タスク3件 |
-| agent/editorがrepoを読みすぎる、agent instructionが肥大化する | **[Agent Token Optimizer](/ja/agent-token-optimizer/)** | baseline scan → 1〜3改善 → rescan |
-| AI reviewにuser/adopter/operator視点が足りない | **[Agent Persona](/ja/agent-persona/)** | 通常review vs persona review |
-| agent memoryを明示的・制御可能な形で研究したい | **[Agent Human Memory](/ja/agent-human-memory/)** | synthetic/低機密exampleで複数session評価 |
-| 複数agent向けskillを再利用可能に管理したい | **[Agent Skill Shelf](/ja/agent-skill-shelf/)** | Preview |
-| 1つの回答を複数視点でreview・統合したい | **[Fusion Skill](/ja/fusion-skill/)** | Preview |
-| ideaからbrief / PRD / taskを作りたい | **AI Product Manager** | Planned public OSS release |
-| taskをagent / model / skill / human gateへ振り分けたい | **Agent Task Router** | Preview |
-| taskをtarget別handoff packetへ変換したい | **Agent Handoff Kit** | Planned public OSS release |
-| agent runをreport / risk / learning / next actionへ変えたい | **Agent Reporting** | Planned public OSS release |
-| developer machineのperformanceを診断したい | **Agent Machine Doctor** | Preview |
-| repo / agent securityのrelease gateがほしい | **Agent Security Doctor** | Preview |
-| Slack / Discordへapprovalやresultを橋渡ししたい | **Agent Channel Bridge** | Preview |
+| 複数coding agentが同じ作業をしたりtask contextを失う | **[Agent Workbench](/ja/agent-workbench/)** | task、ownership、handoff、review、memoryを運用 |
+| agent/editorがrepoを読みすぎる | **[Agent Token Optimizer](/ja/agent-token-optimizer/)** | 実行前のrepo context監査・最適化 |
+| AI reviewにuser/adopter/operator視点が足りない | **[Agent Persona](/ja/agent-persona/)** | 再利用可能なhuman-perspective review |
+| agent memoryを明示的・制御可能にしたい | **[Agent Human Memory](/ja/agent-human-memory/)** | memory、authority、provenance、forgetting |
+| 複数agent向けskillを再利用可能に管理したい | **[Agent Skill Shelf](/ja/agent-skill-shelf/)** | canonical skill sourceとplatform別出力 |
+| 1つの回答を複数視点でreview・統合したい | **[Fusion Skill](/ja/fusion-skill/)** | reviewer laneとjudge synthesis |
+| ideaからbrief / PRD / taskを作りたい | **AI Product Manager** | product planningと実装artifact生成 |
+| taskをagent / model / skill / human gateへ振り分けたい | **Agent Task Router** | deterministic routing |
+| taskをtarget別handoff packetへ変換したい | **Agent Handoff Kit** | agent-ready handoff生成 |
+| agent runをreport / risk / learning / next actionへ変えたい | **Agent Reporting** | run・failure・learningの説明 |
+| developer machineのperformanceを診断したい | **Agent Machine Doctor** | machine health / developer-tool診断 |
+| repo / agent securityのrelease gateがほしい | **Agent Security Doctor** | security diagnostics / release gate |
+| Slack / Discordへapprovalやresultを橋渡ししたい | **Agent Channel Bridge** | human-in-the-loop channel bridge |
 
-[13 OSSすべての説明とrelease stageを見る →](/ja/oss/)
+[13 OSSすべての説明とrelease statusを見る →](/ja/oss/)
 
-## 基本の順番
+## Anchor projectの関係
 
-1. **入口として試しやすい:** Agent Token Optimizer — read-only auditから始められる。
-2. **複数agent運用が既に痛い:** Agent Workbench — task memory、claim、handoff、reviewをまとめる。
-3. **review品質が課題:** Agent Persona / Fusion Skill — 追加時間に対して新しいactionable findingが増えるかを見る。
-4. **必要になったら下位レイヤー:** planning、routing、handoff、reporting、doctor、channel packageを組み合わせる。
-5. **memory研究:** Agent Human Memory — safety boundaryを先に検証する。
+1. **Coordinate — Agent Workbench:** task、routing、claim、handoff、review、completion memory。
+2. **Optimize — Agent Token Optimizer:** context waste、instruction bloat、indexing risk、token budget。
+3. **Review — Agent Persona:** adopter、user、security、operator、buyerなどの視点。
+4. **Remember — Agent Human Memory:** explicit memory、provenance、authority、review、retention、forgetting。
 
-<div class="sw-callout"><strong>ルール:</strong> 13 OSSはすべてpublic release予定ですが、「便利そう」だけで全部を導入しない。繰り返し発生している問題と、改善を判定するbefore/after指標を先に決めます。</div>
+## Public release方針
+
+13 projectはすべてpublic OSSとしてリリース予定です。各repo/packageが本当にpublicになるまでは、product directionとsynthetic previewだけを公開し、private URL、未公開packageのinstall手順、public募集フローは表示しません。
+
+<div class="sw-callout"><strong>ルール:</strong> 全体roadmapは先に公開しますが、availabilityは先取りしません。public packaging、docs、license、安全性のrelease gateを通ったprojectから順番にlinkを追加します。</div>
 
 - [全OSS release roadmap](/ja/oss/)
-- [pilot一覧](/ja/pilot/)
-- [public pilot / release waitlist](https://github.com/soworks-jp/soworks-jp.github.io/issues/3)
 - [English comparison](/compare/)
