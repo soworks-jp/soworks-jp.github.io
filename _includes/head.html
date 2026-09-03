@@ -3,8 +3,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
+  {%- assign translation_url = site.data.translations[page.url] -%}
+  {%- if translation_url -%}
+    {%- if page.lang == 'ja' or page.url contains '/ja/' -%}
+      <link rel="alternate" hreflang="ja" href="{{ page.url | absolute_url }}">
+      <link rel="alternate" hreflang="en" href="{{ translation_url | absolute_url }}">
+      <link rel="alternate" hreflang="x-default" href="{{ translation_url | absolute_url }}">
+    {%- else -%}
+      <link rel="alternate" hreflang="en" href="{{ page.url | absolute_url }}">
+      <link rel="alternate" hreflang="ja" href="{{ translation_url | absolute_url }}">
+      <link rel="alternate" hreflang="x-default" href="{{ page.url | absolute_url }}">
+    {%- endif -%}
+  {%- endif -%}
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/growth.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/motion.css' | relative_url }}">
+  <script defer src="{{ '/assets/interactions.js' | relative_url }}"></script>
   {%- feed_meta -%}
   {%- include custom-head.html -%}
 </head>
