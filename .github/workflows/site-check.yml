@@ -13,22 +13,39 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Validate interaction script syntax
+        run: node --check assets/interactions.js
       - uses: actions/configure-pages@v5
       - uses: actions/jekyll-build-pages@v1
         with:
           source: ./
           destination: ./_site
-      - name: Validate growth landing surfaces
+      - name: Validate growth, motion, and language surfaces
         run: |
           test -f _site/index.html
+          test -f _site/ja/index.html
           test -f _site/agent-workbench/index.html
+          test -f _site/ja/agent-workbench/index.html
           test -f _site/agent-token-optimizer/index.html
+          test -f _site/ja/agent-token-optimizer/index.html
           test -f _site/agent-persona/index.html
+          test -f _site/ja/agent-persona/index.html
           test -f _site/agent-human-memory/index.html
+          test -f _site/ja/agent-human-memory/index.html
           test -f _site/compare/index.html
+          test -f _site/ja/compare/index.html
           test -f _site/pilot/index.html
+          test -f _site/ja/pilot/index.html
           test -f _site/assets/growth.css
+          test -f _site/assets/motion.css
+          test -f _site/assets/interactions.js
           grep -q "Run coding agents like a real engineering team" _site/index.html
           grep -q "Join the 7-day design-partner pilot" _site/agent-workbench/index.html
           grep -q "Audit what your coding agent has to read" _site/agent-token-optimizer/index.html
           grep -q "One concrete experiment" _site/pilot/index.html
+          grep -q "sw-language-switch" _site/index.html
+          grep -q 'hreflang="ja"' _site/index.html
+          grep -q 'hreflang="en"' _site/ja/index.html
+          grep -q "assets/interactions.js" _site/index.html
+          grep -q "その成果物を実際に使う人の視点でレビューする" _site/ja/agent-persona/index.html
+          grep -q "Memoryをブラックボックスにせず" _site/ja/agent-human-memory/index.html
