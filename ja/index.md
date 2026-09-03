@@ -1,99 +1,79 @@
 ---
 layout: home
-title: AIエージェントOSSガイド
+title: AIエージェント開発を支えるローカルファーストOSS
+description: AI coding agentのタスク運用、repo context最適化、personaレビュー、安全なmemory研究をローカルファーストで支えるSO Works Agent Series。
 ---
 
-<section class="sw-hero">
-  <span class="sw-eyebrow">AIエージェントOSSガイド</span>
-  <h1>AIエージェント運用を、ローカルで安全に強くする。</h1>
-  <p>Codex、Claude Code、Gemini CLI、GitHub Copilot、Cursor、Continue などを実際のrepoで使う人向けに、タスク管理、スキル配布、context最適化、複数視点レビューをまとめます。</p>
+<section class="sw-hero sw-hero-product">
+  <span class="sw-eyebrow">SO Works Agent Series · ローカルファーストOSS</span>
+  <h1>AIエージェントを、実際の開発チームのように運用する。</h1>
+  <p>Codex、Claude Code、Cursor、Gemini CLIなどを実repoで使う人向けに、タスクの引き継ぎ、context削減、レビュー品質、memoryの安全性までを小さなOSSとして分けて提供します。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="agent-workbench/">プロジェクトを見る</a>
+    <a class="sw-button" href="agent-workbench/">Agent Workbenchを見る</a>
+    <a class="sw-button secondary" href="agent-token-optimizer/">repoを5分で診断する</a>
+    <a class="sw-button secondary" href="pilot/">pilotに参加する</a>
     <a class="sw-button secondary" href="../">English</a>
-    <a class="sw-button secondary" href="compare/">使い分けを見る</a>
   </div>
-  <div class="sw-chip-row" aria-label="Guide filters">
-    <span class="sw-chip">OSS</span>
-    <span class="sw-chip">ローカルファースト</span>
-    <span class="sw-chip">AI Agents</span>
-    <span class="sw-chip">開発者向け</span>
-    <span class="sw-chip">日本語ガイド</span>
+  <div class="sw-proof-row">
+    <span><strong>ローカルファースト</strong><small>core workflowはSaaS登録なしで使える</small></span>
+    <span><strong>MIT OSS</strong><small>中身を確認し、fork・統合できる</small></span>
+    <span><strong>Agent agnostic</strong><small>複数のcoding agentを前提にする</small></span>
+    <span><strong>実験で評価</strong><small>pilotはsignup数ではなくbefore/afterで見る</small></span>
   </div>
 </section>
 
 <section class="sw-section">
   <div class="sw-section-head">
     <div>
-      <h2>プロジェクト</h2>
-      <p>AI coding agentを安全に、再現性高く使うための小さなOSS群です。</p>
+      <span class="sw-kicker">Agent Series</span>
+      <h2>今困っている1つのボトルネックから使う。</h2>
+      <p>全部を導入する必要はありません。まず1つの問題を小さな実験で解決し、必要になったら組み合わせます。</p>
     </div>
-    <a href="compare/">比較を見る</a>
+    <a href="compare/">使い分けを見る</a>
   </div>
 
-  <div class="sw-grid">
-    <a class="sw-card" href="agent-workbench/">
-      <div class="sw-card-top">
-        <span class="sw-icon">AW</span>
-        <span class="sw-badge">ガイド</span>
-      </div>
+  <div class="sw-grid sw-product-grid">
+    <article class="sw-card sw-product-card featured">
+      <div class="sw-card-top"><span class="sw-icon">AW</span><span class="sw-badge">中心プロダクト</span></div>
       <h3>Agent Workbench</h3>
-      <p>AI coding agentのタスク、claim、prompt、report、PR briefをローカル管理する。</p>
-      <div class="sw-card-footer">
-        <span class="sw-tag">タスク</span>
-        <span class="sw-tag">ルーティング</span>
-        <span class="sw-tag">PR brief</span>
-      </div>
-    </a>
+      <p class="sw-card-lead">複数coding agentのタスク、担当、handoff、review、完了memoryをrepo内で管理。</p>
+      <ul class="sw-mini-list"><li>task memory / routing / claim lease</li><li>prompt / report / review / Local Control</li><li>7日間・実タスク3件のdesign partner pilot</li></ul>
+      <div class="sw-card-actions"><a class="sw-button" href="agent-workbench/">詳しく見る</a><a href="https://github.com/soworks-jp/agent-workbench/issues/106">pilot参加 →</a></div>
+    </article>
 
-    <a class="sw-card" href="agent-skill-shelf/">
-      <div class="sw-card-top">
-        <span class="sw-icon cyan">SS</span>
-        <span class="sw-badge">ガイド</span>
-      </div>
-      <h3>Agent Skill Shelf</h3>
-      <p>複数AIエージェント向けのskillをsource bundleとして管理・配布する。</p>
-      <div class="sw-card-footer">
-        <span class="sw-tag">スキル</span>
-        <span class="sw-tag">配布</span>
-        <span class="sw-tag">bundle</span>
-      </div>
-    </a>
-
-    <a class="sw-card" href="agent-token-optimizer/">
-      <div class="sw-card-top">
-        <span class="sw-icon green">TO</span>
-        <span class="sw-badge">ガイド</span>
-      </div>
+    <article class="sw-card sw-product-card">
+      <div class="sw-card-top"><span class="sw-icon green">TO</span><span class="sw-badge green">最短で試せる</span></div>
       <h3>Agent Token Optimizer</h3>
-      <p>大きなrepoでagentに渡す前のcontext量、token risk、model routingを確認する。</p>
-      <div class="sw-card-footer">
-        <span class="sw-tag">context</span>
-        <span class="sw-tag">risk</span>
-        <span class="sw-tag">routing</span>
-      </div>
-    </a>
+      <p class="sw-card-lead">AIが読むrepo contextの無駄、巨大ファイル、instruction肥大、indexing riskをローカル診断。</p>
+      <ul class="sw-mini-list"><li>read-only scanから開始</li><li>安全な1〜3改善をbefore/after比較</li><li>source codeの外部送信なし</li></ul>
+      <div class="sw-card-actions"><a class="sw-button secondary" href="agent-token-optimizer/">repo診断を見る</a><a href="https://github.com/soworks-jp/agent-token-optimizer/issues/6">audit pilot →</a></div>
+    </article>
 
-    <a class="sw-card" href="fusion-skill/">
-      <div class="sw-card-top">
-        <span class="sw-icon orange">FS</span>
-        <span class="sw-badge">ガイド</span>
-      </div>
-      <h3>Fusion Skill</h3>
-      <p>AI回答を複数視点でレビューし、合意点、リスク、修正方針を統合する。</p>
-      <div class="sw-card-footer">
-        <span class="sw-tag">レビュー</span>
-        <span class="sw-tag">統合</span>
-        <span class="sw-tag">品質</span>
-      </div>
-    </a>
+    <article class="sw-card sw-product-card">
+      <div class="sw-card-top"><span class="sw-icon orange">AP</span><span class="sw-badge orange">30分challenge</span></div>
+      <h3>Agent Persona</h3>
+      <p class="sw-card-lead">user、adopter、security、operator、buyerなどの視点をAI reviewへ明示的に追加。</p>
+      <ul class="sw-mini-list"><li>通常reviewとのbefore/after</li><li>新しいactionable findingだけ測る</li><li>README / PRD / onboarding / handoff向け</li></ul>
+      <div class="sw-card-actions"><a class="sw-button secondary" href="../agent-persona/">英語ページ</a><a href="https://github.com/soworks-jp/agent-persona/issues/5">challenge参加 →</a></div>
+    </article>
+
+    <article class="sw-card sw-product-card">
+      <div class="sw-card-top"><span class="sw-icon cyan">HM</span><span class="sw-badge cyan">Research</span></div>
+      <h3>Agent Human Memory</h3>
+      <p class="sw-card-lead">明示的・review可能・forget可能なhuman-like memoryを安全性優先で研究。</p>
+      <ul class="sw-mini-list"><li>preference / goal / episode / relationship context</li><li>authority / provenance / consent / forgetting</li><li>synthetic・低機密data限定の招待制pilot</li></ul>
+      <div class="sw-card-actions"><a class="sw-button secondary" href="../agent-human-memory/">英語ページ</a><a href="https://github.com/soworks-jp/agent-human-memory/issues/8">research pilot →</a></div>
+    </article>
   </div>
 </section>
 
-<section class="sw-panel">
-  <h2>英語READMEは短く、日本語は導入文脈まで厚く。</h2>
-  <p>OSS本体は英語READMEを一次情報にし、日本語ページでは「何に使うか」「どう依頼するか」「安全に導入するには何を見るか」を補足します。</p>
+<section class="sw-panel sw-pilot-panel">
+  <span class="sw-kicker inverse">Pilot募集中</span>
+  <h2>「使って感想ください」ではなく、1つの具体的な実験を。</h2>
+  <p>Workbenchは7日で実タスク3件、Token Optimizerはrepoのbefore/after audit、Personaは30分review challenge、Human Memoryは招待制research pilotです。</p>
   <div class="sw-actions">
-    <a class="sw-button" href="compare/">OSSの使い分けを見る</a>
-    <a class="sw-button secondary" href="https://github.com/soworks-jp">GitHub organization</a>
+    <a class="sw-button" href="pilot/">pilotを選ぶ</a>
+    <a class="sw-button secondary" href="compare/">OSSを比較する</a>
+    <a class="sw-button secondary" href="https://github.com/soworks-jp">GitHubを見る</a>
   </div>
 </section>
